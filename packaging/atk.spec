@@ -1,8 +1,8 @@
 %bcond_with introspection
 
 Name:           atk
-Version:        2.6.0
-Release:        2.1
+Version:        2.7.3
+Release:        0
 License:        LGPL-2.1+
 Summary:        An Accessibility ToolKit
 Url:            http://www.gtk.org/
