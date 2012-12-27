@@ -335,8 +335,10 @@ to class and interface structures to allow for expansion in the future.
 
 </para>
 
-@data: a gpointer to parameter data.
+@user_data: 
 @Returns: Nothing useful, this is only a dummy prototype.
+<!-- # Unused Parameters # -->
+@data: a gpointer to parameter data.
 
 
 <!-- ##### USER_FUNCTION AtkPropertyChangeHandler ##### -->
@@ -345,6 +347,9 @@ An AtkPropertyChangeHandler is a function which is executed when an AtkObject's 
 atk_object_connect_property_change_handler().
 </para>
 
+@obj: 
+@vals: 
+<!-- # Unused Parameters # -->
 @Param1:  an #AtkObject
 @Param2:  an #AtkPropertyValues
 

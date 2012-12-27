@@ -131,7 +131,7 @@ The AtkUtil struct does not contain any fields.
 </para>
 
 @event: 
-@func_data: 
+@user_data: 
 @Returns: 
 
 
