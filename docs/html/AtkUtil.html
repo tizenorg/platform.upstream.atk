@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkText.html" title="AtkText">
 <link rel="next" href="AtkValue.html" title="AtkValue">
-<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -41,27 +41,27 @@
 <a name="AtkUtil.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">struct              <a class="link" href="AtkUtil.html#AtkUtil-struct" title="struct AtkUtil">AtkUtil</a>;
 enum                <a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType">AtkCoordType</a>;
-<span class="returnvalue">guint</span>               <a class="link" href="AtkUtil.html#atk-add-focus-tracker" title="atk_add_focus_tracker ()">atk_add_focus_tracker</a>               (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkEventListener" title="AtkEventListener ()"><span class="type">AtkEventListener</span></a> focus_tracker</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="AtkUtil.html#atk-remove-focus-tracker" title="atk_remove_focus_tracker ()">atk_remove_focus_tracker</a>            (<em class="parameter"><code><span class="type">guint</span> tracker_id</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               <a class="link" href="AtkUtil.html#atk-add-focus-tracker" title="atk_add_focus_tracker ()">atk_add_focus_tracker</a>               (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkEventListener" title="AtkEventListener ()"><span class="type">AtkEventListener</span></a> focus_tracker</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="AtkUtil.html#atk-remove-focus-tracker" title="atk_remove_focus_tracker ()">atk_remove_focus_tracker</a>            (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> tracker_id</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkUtil.html#atk-focus-tracker-init" title="atk_focus_tracker_init ()">atk_focus_tracker_init</a>              (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkEventListenerInit" title="AtkEventListenerInit ()"><span class="type">AtkEventListenerInit</span></a> init</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkUtil.html#atk-focus-tracker-notify" title="atk_focus_tracker_notify ()">atk_focus_tracker_notify</a>            (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>);
 <span class="returnvalue">void</span>                (<a class="link" href="AtkUtil.html#AtkEventListener" title="AtkEventListener ()">*AtkEventListener</a>)                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *obj</code></em>);
 <span class="returnvalue">void</span>                (<a class="link" href="AtkUtil.html#AtkEventListenerInit" title="AtkEventListenerInit ()">*AtkEventListenerInit</a>)             (<em class="parameter"><code><span class="type">void</span></code></em>);
-<span class="returnvalue">guint</span>               <a class="link" href="AtkUtil.html#atk-add-global-event-listener" title="atk_add_global_event_listener ()">atk_add_global_event_listener</a>       (<em class="parameter"><code><span class="type">GSignalEmissionHook</span> listener</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">gchar</span> *event_type</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="AtkUtil.html#atk-remove-global-event-listener" title="atk_remove_global_event_listener ()">atk_remove_global_event_listener</a>    (<em class="parameter"><code><span class="type">guint</span> listener_id</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               <a class="link" href="AtkUtil.html#atk-add-global-event-listener" title="atk_add_global_event_listener ()">atk_add_global_event_listener</a>       (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#GSignalEmissionHook"><span class="type">GSignalEmissionHook</span></a> listener</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *event_type</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="AtkUtil.html#atk-remove-global-event-listener" title="atk_remove_global_event_listener ()">atk_remove_global_event_listener</a>    (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> listener_id</code></em>);
 struct              <a class="link" href="AtkUtil.html#AtkKeyEventStruct" title="struct AtkKeyEventStruct">AtkKeyEventStruct</a>;
 enum                <a class="link" href="AtkUtil.html#AtkKeyEventType" title="enum AtkKeyEventType">AtkKeyEventType</a>;
-<span class="returnvalue">gint</span>                (<a class="link" href="AtkUtil.html#AtkKeySnoopFunc" title="AtkKeySnoopFunc ()">*AtkKeySnoopFunc</a>)                  (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkKeyEventStruct" title="struct AtkKeyEventStruct"><span class="type">AtkKeyEventStruct</span></a> *event</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
-<span class="returnvalue">guint</span>               <a class="link" href="AtkUtil.html#atk-add-key-event-listener" title="atk_add_key_event_listener ()">atk_add_key_event_listener</a>          (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkKeySnoopFunc" title="AtkKeySnoopFunc ()"><span class="type">AtkKeySnoopFunc</span></a> listener</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="AtkUtil.html#atk-remove-key-event-listener" title="atk_remove_key_event_listener ()">atk_remove_key_event_listener</a>       (<em class="parameter"><code><span class="type">guint</span> listener_id</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                (<a class="link" href="AtkUtil.html#AtkKeySnoopFunc" title="AtkKeySnoopFunc ()">*AtkKeySnoopFunc</a>)                  (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkKeyEventStruct" title="struct AtkKeyEventStruct"><span class="type">AtkKeyEventStruct</span></a> *event</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               <a class="link" href="AtkUtil.html#atk-add-key-event-listener" title="atk_add_key_event_listener ()">atk_add_key_event_listener</a>          (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkKeySnoopFunc" title="AtkKeySnoopFunc ()"><span class="type">AtkKeySnoopFunc</span></a> listener</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="AtkUtil.html#atk-remove-key-event-listener" title="atk_remove_key_event_listener ()">atk_remove_key_event_listener</a>       (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> listener_id</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkUtil.html#atk-get-root" title="atk_get_root ()">atk_get_root</a>                        (<em class="parameter"><code><span class="type">void</span></code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkUtil.html#atk-get-focus-object" title="atk_get_focus_object ()">atk_get_focus_object</a>                (<em class="parameter"><code><span class="type">void</span></code></em>);
-const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkUtil.html#atk-get-toolkit-name" title="atk_get_toolkit_name ()">atk_get_toolkit_name</a>                (<em class="parameter"><code><span class="type">void</span></code></em>);
-const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkUtil.html#atk-get-toolkit-version" title="atk_get_toolkit_version ()">atk_get_toolkit_version</a>             (<em class="parameter"><code><span class="type">void</span></code></em>);
-const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkUtil.html#atk-get-version" title="atk_get_version ()">atk_get_version</a>                     (<em class="parameter"><code><span class="type">void</span></code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkUtil.html#atk-get-toolkit-name" title="atk_get_toolkit_name ()">atk_get_toolkit_name</a>                (<em class="parameter"><code><span class="type">void</span></code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkUtil.html#atk-get-toolkit-version" title="atk_get_toolkit_version ()">atk_get_toolkit_version</a>             (<em class="parameter"><code><span class="type">void</span></code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkUtil.html#atk-get-version" title="atk_get_version ()">atk_get_version</a>                     (<em class="parameter"><code><span class="type">void</span></code></em>);
 #define             <a class="link" href="AtkUtil.html#ATK-DEFINE-TYPE:CAPS" title="ATK_DEFINE_TYPE()">ATK_DEFINE_TYPE</a>                     (TN,
                                                          t_n,
                                                          T_P)
@@ -86,7 +86,7 @@ const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkUt
 <div class="refsect1">
 <a name="AtkUtil.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  GObject
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----AtkUtil
 </pre>
 </div>
@@ -139,7 +139,7 @@ top-level window
 <hr>
 <div class="refsect2">
 <a name="atk-add-focus-tracker"></a><h3>atk_add_focus_tracker ()</h3>
-<pre class="programlisting"><span class="returnvalue">guint</span>               atk_add_focus_tracker               (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkEventListener" title="AtkEventListener ()"><span class="type">AtkEventListener</span></a> focus_tracker</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               atk_add_focus_tracker               (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkEventListener" title="AtkEventListener ()"><span class="type">AtkEventListener</span></a> focus_tracker</code></em>);</pre>
 <p>
 Adds the specified function to the list of functions to be called
 when an object receives focus.
@@ -162,7 +162,7 @@ when an object receives focus.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-remove-focus-tracker"></a><h3>atk_remove_focus_tracker ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                atk_remove_focus_tracker            (<em class="parameter"><code><span class="type">guint</span> tracker_id</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                atk_remove_focus_tracker            (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> tracker_id</code></em>);</pre>
 <p>
 Removes the specified focus tracker from the list of functions
 to be called when any object receives focus.
@@ -249,8 +249,8 @@ see atk_focus_tracker_init.
 <hr>
 <div class="refsect2">
 <a name="atk-add-global-event-listener"></a><h3>atk_add_global_event_listener ()</h3>
-<pre class="programlisting"><span class="returnvalue">guint</span>               atk_add_global_event_listener       (<em class="parameter"><code><span class="type">GSignalEmissionHook</span> listener</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">gchar</span> *event_type</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               atk_add_global_event_listener       (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#GSignalEmissionHook"><span class="type">GSignalEmissionHook</span></a> listener</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *event_type</code></em>);</pre>
 <p>
 Adds the specified function to the list of functions to be called
 when an ATK event of type event_type occurs.
@@ -303,7 +303,7 @@ reimplement this method.
 <hr>
 <div class="refsect2">
 <a name="atk-remove-global-event-listener"></a><h3>atk_remove_global_event_listener ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                atk_remove_global_event_listener    (<em class="parameter"><code><span class="type">guint</span> listener_id</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                atk_remove_global_event_listener    (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> listener_id</code></em>);</pre>
 <p>
 <em class="parameter"><code>listener_id</code></em> is the value returned by <a class="link" href="AtkUtil.html#atk-add-global-event-listener" title="atk_add_global_event_listener ()"><span class="type">atk_add_global_event_listener</span></a>
 when you registered that event listener.
@@ -345,28 +345,28 @@ Encapsulates information about a key event.
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td><p><span class="term"><span class="type">gint</span> <em class="structfield"><code><a name="AtkKeyEventStruct.type"></a>type</code></em>;</span></p></td>
+<td><p><span class="term"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="AtkKeyEventStruct.type"></a>type</code></em>;</span></p></td>
 <td>An AtkKeyEventType, generally one of ATK_KEY_EVENT_PRESS or ATK_KEY_EVENT_RELEASE</td>
 </tr>
 <tr>
-<td><p><span class="term"><span class="type">guint</span> <em class="structfield"><code><a name="AtkKeyEventStruct.state"></a>state</code></em>;</span></p></td>
+<td><p><span class="term"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="AtkKeyEventStruct.state"></a>state</code></em>;</span></p></td>
 <td>A bitmask representing the state of the modifier keys immediately after the event takes place.
 The meaning of the bits is currently defined to match the bitmask used by GDK in
 GdkEventType.state, see
-http://developer.gnome.org/doc/API/2.0/gdk/gdk-Event-Structures.html<span class="type">GdkEventKey</span>
+http://developer.gnome.org/doc/API/2.0/gdk/gdk-Event-Structures.html<a href="http://developer.gnome.org/gdk2/gdk3-Event-Structures.html#GdkEventKey"><span class="type">GdkEventKey</span></a>
 </td>
 </tr>
 <tr>
-<td><p><span class="term"><span class="type">guint</span> <em class="structfield"><code><a name="AtkKeyEventStruct.keyval"></a>keyval</code></em>;</span></p></td>
+<td><p><span class="term"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="AtkKeyEventStruct.keyval"></a>keyval</code></em>;</span></p></td>
 <td>A guint representing a keysym value corresponding to those used by GDK and X11: see
 /usr/X11/include/keysymdef.h.</td>
 </tr>
 <tr>
-<td><p><span class="term"><span class="type">gint</span> <em class="structfield"><code><a name="AtkKeyEventStruct.length"></a>length</code></em>;</span></p></td>
+<td><p><span class="term"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="AtkKeyEventStruct.length"></a>length</code></em>;</span></p></td>
 <td>The length of member <span class="type">string</span>.</td>
 </tr>
 <tr>
-<td><p><span class="term"><span class="type">gchar</span> *<em class="structfield"><code><a name="AtkKeyEventStruct.string"></a>string</code></em>;</span></p></td>
+<td><p><span class="term"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AtkKeyEventStruct.string"></a>string</code></em>;</span></p></td>
 <td>A string containing one of the following: either a string approximating the text that would
 result from this keypress, if the key is a control or graphic character, or a symbolic name for this keypress.
 Alphanumeric and printable keys will have the symbolic key name in this string member, for instance "A". "0",
@@ -421,8 +421,8 @@ Specifies the type of a keyboard evemt.
 <hr>
 <div class="refsect2">
 <a name="AtkKeySnoopFunc"></a><h3>AtkKeySnoopFunc ()</h3>
-<pre class="programlisting"><span class="returnvalue">gint</span>                (*AtkKeySnoopFunc)                  (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkKeyEventStruct" title="struct AtkKeyEventStruct"><span class="type">AtkKeyEventStruct</span></a> *event</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                (*AtkKeySnoopFunc)                  (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkKeyEventStruct" title="struct AtkKeyEventStruct"><span class="type">AtkKeyEventStruct</span></a> *event</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 An <a class="link" href="AtkUtil.html#AtkKeySnoopFunc" title="AtkKeySnoopFunc ()"><span class="type">AtkKeySnoopFunc</span></a> is a type of callback which is called whenever a key event occurs, 
 if registered via atk_add_key_event_listener.  It allows for pre-emptive 
@@ -453,8 +453,8 @@ see atk_add_key_event_listener.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-add-key-event-listener"></a><h3>atk_add_key_event_listener ()</h3>
-<pre class="programlisting"><span class="returnvalue">guint</span>               atk_add_key_event_listener          (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkKeySnoopFunc" title="AtkKeySnoopFunc ()"><span class="type">AtkKeySnoopFunc</span></a> listener</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               atk_add_key_event_listener          (<em class="parameter"><code><a class="link" href="AtkUtil.html#AtkKeySnoopFunc" title="AtkKeySnoopFunc ()"><span class="type">AtkKeySnoopFunc</span></a> listener</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
 <p>
 Adds the specified function to the list of functions to be called
        when a key event occurs.  The <em class="parameter"><code>data</code></em> element will be passed to the
@@ -469,7 +469,7 @@ Adds the specified function to the list of functions to be called
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
-<td>a <span class="type">gpointer</span> that points to a block of data that should be sent to the registered listeners,
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> that points to a block of data that should be sent to the registered listeners,
 along with the event notification, when it occurs.</td>
 </tr>
 <tr>
@@ -482,7 +482,7 @@ along with the event notification, when it occurs.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-remove-key-event-listener"></a><h3>atk_remove_key_event_listener ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                atk_remove_key_event_listener       (<em class="parameter"><code><span class="type">guint</span> listener_id</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                atk_remove_key_event_listener       (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> listener_id</code></em>);</pre>
 <p>
 <em class="parameter"><code>listener_id</code></em> is the value returned by <a class="link" href="AtkUtil.html#atk-add-key-event-listener" title="atk_add_key_event_listener ()"><span class="type">atk_add_key_event_listener</span></a>
 when you registered that event listener.
@@ -536,7 +536,7 @@ application. <span class="annotation">[<a href="http://foldoc.org/transfer%20non
 <hr>
 <div class="refsect2">
 <a name="atk-get-toolkit-name"></a><h3>atk_get_toolkit_name ()</h3>
-<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_get_toolkit_name                (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_get_toolkit_name                (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 Gets name string for the GUI toolkit implementing ATK for this application.
 </p>
@@ -551,7 +551,7 @@ Gets name string for the GUI toolkit implementing ATK for this application.
 <hr>
 <div class="refsect2">
 <a name="atk-get-toolkit-version"></a><h3>atk_get_toolkit_version ()</h3>
-<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_get_toolkit_version             (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_get_toolkit_version             (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 Gets version string for the GUI toolkit implementing ATK for this application.
 </p>
@@ -566,7 +566,7 @@ Gets version string for the GUI toolkit implementing ATK for this application.
 <hr>
 <div class="refsect2">
 <a name="atk-get-version"></a><h3>atk_get_version ()</h3>
-<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_get_version                     (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_get_version                     (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 Gets the current version for ATK.
 </p>
@@ -586,7 +586,7 @@ Gets the current version for ATK.
 </pre>
 <p>
 A convenience macro for type ATK implementations, which declares a class
-initialization function, an instance initialization function (see <span class="type">GTypeInfo</span>
+initialization function, an instance initialization function (see <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GTypeInfo"><span class="type">GTypeInfo</span></a>
 for information about these) and a static variable named
 <em class="parameter"><code>t_n</code></em> _parent_class pointing to the parent class. Furthermore, it
 defines a <code class="function">_get_type()</code> function.
@@ -604,7 +604,7 @@ defines a <code class="function">_get_type()</code> function.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>T_P</code></em> :</span></p></td>
-<td>The <span class="type">GType</span> of the parent type.</td>
+<td>The <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of the parent type.</td>
 </tr>
 </tbody>
 </table></div>
@@ -632,12 +632,12 @@ The most general convenience macro for ATK type implementations, on which
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>T_P</code></em> :</span></p></td>
-<td>The <span class="type">GType</span> of the parent type.</td>
+<td>The <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of the parent type.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>_f_</code></em> :</span></p></td>
 <td>
-<span class="type">GTypeFlags</span> to pass to <code class="function">g_type_register_static()</code>
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GTypeFlags"><span class="type">GTypeFlags</span></a> to pass to <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#g-type-register-static"><code class="function">g_type_register_static()</code></a>
 </td>
 </tr>
 <tr>
@@ -656,7 +656,7 @@ The most general convenience macro for ATK type implementations, on which
 <p>
 A convenience macro for ATK type implementations.
 Similar to <a class="link" href="AtkUtil.html#ATK-DEFINE-TYPE:CAPS" title="ATK_DEFINE_TYPE()"><code class="function">ATK_DEFINE_TYPE()</code></a>, but allows you to insert custom code into the
-<code class="function">_get_type()</code> function, e.g. interface implementations via <code class="function">G_IMPLEMENT_INTERFACE()</code>.
+<code class="function">_get_type()</code> function, e.g. interface implementations via <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-IMPLEMENT-INTERFACE:CAPS"><code class="function">G_IMPLEMENT_INTERFACE()</code></a>.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -671,7 +671,7 @@ Similar to <a class="link" href="AtkUtil.html#ATK-DEFINE-TYPE:CAPS" title="ATK_D
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>T_P</code></em> :</span></p></td>
-<td>The <span class="type">GType</span> of the parent type.</td>
+<td>The <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of the parent type.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>_C_</code></em> :</span></p></td>
@@ -703,7 +703,7 @@ Similar to <a class="link" href="AtkUtil.html#ATK-DEFINE-TYPE:CAPS" title="ATK_D
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>T_P</code></em> :</span></p></td>
-<td>The <span class="type">GType</span> of the parent type.</td>
+<td>The <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of the parent type.</td>
 </tr>
 </tbody>
 </table></div>
@@ -731,7 +731,7 @@ Similar to <a class="link" href="AtkUtil.html#ATK-DEFINE-TYPE-WITH-CODE:CAPS" ti
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>T_P</code></em> :</span></p></td>
-<td>The <span class="type">GType</span> of the parent type.</td>
+<td>The <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of the parent type.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>_C_</code></em> :</span></p></td>
@@ -745,6 +745,6 @@ Similar to <a class="link" href="AtkUtil.html#ATK-DEFINE-TYPE-WITH-CODE:CAPS" ti
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18.1</div>
+          Generated by GTK-Doc V1.18</div>
 </body>
 </html>

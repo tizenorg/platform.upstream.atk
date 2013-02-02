@@ -201,6 +201,7 @@
    <File RelativePath="..\..\..\atk\atkutil.c" />
    <File RelativePath="..\..\..\atk\atkmisc.c" />
    <File RelativePath="..\..\..\atk\atkvalue.c" />
+   <File RelativePath="..\..\..\atk\atkversion.c" />
    <File RelativePath="..\..\..\atk\atkwindow.c" />
    <File RelativePath="..\..\..\atk\atk-enum-types.c" />
   </Filter>

@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkEditableText.html" title="AtkEditableText">
 <link rel="next" href="AtkHyperlink.html" title="AtkHyperlink">
-<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -41,14 +41,14 @@ implementing accessible objects.</p>
 <div class="refsynopsisdiv">
 <a name="AtkGObjectAccessible.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">struct              <a class="link" href="AtkGObjectAccessible.html#AtkGObjectAccessible-struct" title="struct AtkGObjectAccessible">AtkGObjectAccessible</a>;
-<a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkGObjectAccessible.html#atk-gobject-accessible-for-object" title="atk_gobject_accessible_for_object ()">atk_gobject_accessible_for_object</a>   (<em class="parameter"><code><span class="type">GObject</span> *obj</code></em>);
-<span class="returnvalue">GObject</span> *           <a class="link" href="AtkGObjectAccessible.html#atk-gobject-accessible-get-object" title="atk_gobject_accessible_get_object ()">atk_gobject_accessible_get_object</a>   (<em class="parameter"><code><a class="link" href="AtkGObjectAccessible.html" title="AtkGObjectAccessible"><span class="type">AtkGObjectAccessible</span></a> *obj</code></em>);
+<a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkGObjectAccessible.html#atk-gobject-accessible-for-object" title="atk_gobject_accessible_for_object ()">atk_gobject_accessible_for_object</a>   (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *obj</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           <a class="link" href="AtkGObjectAccessible.html#atk-gobject-accessible-get-object" title="atk_gobject_accessible_get_object ()">atk_gobject_accessible_get_object</a>   (<em class="parameter"><code><a class="link" href="AtkGObjectAccessible.html" title="AtkGObjectAccessible"><span class="type">AtkGObjectAccessible</span></a> *obj</code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="AtkGObjectAccessible.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  GObject
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----<a class="link" href="AtkObject.html" title="AtkObject">AtkObject</a>
          +----AtkGObjectAccessible
 </pre>
@@ -74,7 +74,7 @@ The AtkGObjectAccessible structure should not be accessed directly.
 <hr>
 <div class="refsect2">
 <a name="atk-gobject-accessible-for-object"></a><h3>atk_gobject_accessible_for_object ()</h3>
-<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_gobject_accessible_for_object   (<em class="parameter"><code><span class="type">GObject</span> *obj</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_gobject_accessible_for_object   (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *obj</code></em>);</pre>
 <p>
 Gets the accessible object for the specified <em class="parameter"><code>obj</code></em>.
 </p>
@@ -83,7 +83,7 @@ Gets the accessible object for the specified <em class="parameter"><code>obj</co
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
-<td>a <span class="type">GObject</span>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>
 </td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@ the <em class="parameter"><code>obj</code></em>. <span class="annotation">[<a hr
 <hr>
 <div class="refsect2">
 <a name="atk-gobject-accessible-get-object"></a><h3>atk_gobject_accessible_get_object ()</h3>
-<pre class="programlisting"><span class="returnvalue">GObject</span> *           atk_gobject_accessible_get_object   (<em class="parameter"><code><a class="link" href="AtkGObjectAccessible.html" title="AtkGObjectAccessible"><span class="type">AtkGObjectAccessible</span></a> *obj</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           atk_gobject_accessible_get_object   (<em class="parameter"><code><a class="link" href="AtkGObjectAccessible.html" title="AtkGObjectAccessible"><span class="type">AtkGObjectAccessible</span></a> *obj</code></em>);</pre>
 <p>
 Gets the GObject for which <em class="parameter"><code>obj</code></em> is the accessible object.
 </p>
@@ -112,7 +112,7 @@ Gets the GObject for which <em class="parameter"><code>obj</code></em> is the ac
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <span class="type">GObject</span> which is the object for which <em class="parameter"><code>obj</code></em> is
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> which is the object for which <em class="parameter"><code>obj</code></em> is
 the accessible object. <span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span>
 </td>
 </tr>
@@ -123,6 +123,6 @@ the accessible object. <span class="annotation">[<a href="http://foldoc.org/tran
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18.1</div>
+          Generated by GTK-Doc V1.18</div>
 </body>
 </html>

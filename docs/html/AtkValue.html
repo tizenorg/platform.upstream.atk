@@ -7,8 +7,8 @@
 <link rel="home" href="index.html" title="ATK - Accessibility Toolkit">
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkUtil.html" title="AtkUtil">
-<link rel="next" href="api-index-full.html" title="Index of all symbols">
-<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="next" href="AtkWindow.html" title="AtkWindow">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -18,7 +18,7 @@
 <td><a accesskey="u" href="atk.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
 <th width="100%" align="center">ATK - Accessibility Toolkit</th>
-<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+<td><a accesskey="n" href="AtkWindow.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
 </tr>
 <tr><td colspan="5" class="shortcuts">
 <a href="#AtkValue.synopsis" class="shortcut">Top</a>
@@ -44,15 +44,15 @@ select a value from a bounded range of values.</p>
 <a name="AtkValue.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="AtkValue.html#AtkValue-struct" title="AtkValue">AtkValue</a>;
 <span class="returnvalue">void</span>                <a class="link" href="AtkValue.html#atk-value-get-current-value" title="atk_value_get_current_value ()">atk_value_get_current_value</a>         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkValue.html#atk-value-get-maximum-value" title="atk_value_get_maximum_value ()">atk_value_get_maximum_value</a>         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkValue.html#atk-value-get-minimum-value" title="atk_value_get_minimum_value ()">atk_value_get_minimum_value</a>         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="AtkValue.html#atk-value-set-current-value" title="atk_value_set_current_value ()">atk_value_set_current_value</a>         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkValue.html#atk-value-set-current-value" title="atk_value_set_current_value ()">atk_value_set_current_value</a>         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkValue.html#atk-value-get-minimum-increment" title="atk_value_get_minimum_increment ()">atk_value_get_minimum_increment</a>     (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -93,7 +93,7 @@ The AtkValue structure does not contain any fields.
 <div class="refsect2">
 <a name="atk-value-get-current-value"></a><h3>atk_value_get_current_value ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_value_get_current_value         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
 <p>
 Gets the value of this object.
 </p>
@@ -106,7 +106,7 @@ Gets the value of this object.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> representing the current accessible value</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> representing the current accessible value</td>
 </tr>
 </tbody>
 </table></div>
@@ -115,7 +115,7 @@ Gets the value of this object.
 <div class="refsect2">
 <a name="atk-value-get-maximum-value"></a><h3>atk_value_get_maximum_value ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_value_get_maximum_value         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
 <p>
 Gets the maximum value of this object.
 </p>
@@ -128,7 +128,7 @@ Gets the maximum value of this object.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> representing the maximum accessible value</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> representing the maximum accessible value</td>
 </tr>
 </tbody>
 </table></div>
@@ -137,7 +137,7 @@ Gets the maximum value of this object.
 <div class="refsect2">
 <a name="atk-value-get-minimum-value"></a><h3>atk_value_get_minimum_value ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_value_get_minimum_value         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
 <p>
 Gets the minimum value of this object.
 </p>
@@ -150,7 +150,7 @@ Gets the minimum value of this object.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> representing the minimum accessible value</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> representing the minimum accessible value</td>
 </tr>
 </tbody>
 </table></div>
@@ -158,8 +158,8 @@ Gets the minimum value of this object.
 <hr>
 <div class="refsect2">
 <a name="atk-value-set-current-value"></a><h3>atk_value_set_current_value ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_value_set_current_value         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_value_set_current_value         (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
 <p>
 Sets the value of this object.
 </p>
@@ -172,12 +172,12 @@ Sets the value of this object.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> which is the desired new accessible value.</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> which is the desired new accessible value.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<code class="literal">TRUE</code> if new value is successfully set, <code class="literal">FALSE</code> otherwise.</td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if new value is successfully set, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
 </tr>
 </tbody>
 </table></div>
@@ -186,7 +186,7 @@ Sets the value of this object.
 <div class="refsect2">
 <a name="atk-value-get-minimum-increment"></a><h3>atk_value_get_minimum_increment ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_value_get_minimum_increment     (<em class="parameter"><code><a class="link" href="AtkValue.html" title="AtkValue"><span class="type">AtkValue</span></a> *obj</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
 <p>
 Gets the minimum increment by which the value of this object may be changed.  If zero,
 the minimum increment is undefined, which may mean that it is limited only by the 
@@ -201,7 +201,7 @@ floating point precision of the platform.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> representing the minimum increment by which the accessible value may be changed</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> representing the minimum increment by which the accessible value may be changed</td>
 </tr>
 </tbody>
 </table></div>
@@ -211,6 +211,6 @@ floating point precision of the platform.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18.1</div>
+          Generated by GTK-Doc V1.18</div>
 </body>
 </html>

@@ -196,6 +196,7 @@
     <ClCompile Include="..\..\..\atk\atkutil.c" />
     <ClCompile Include="..\..\..\atk\atkmisc.c" />
     <ClCompile Include="..\..\..\atk\atkvalue.c" />
+    <ClCompile Include="..\..\..\atk\atkversion.c" />
     <ClCompile Include="..\..\..\atk\atkwindow.c" />
     <ClCompile Include="..\..\..\atk\atk-enum-types.c" />
   </ItemGroup>

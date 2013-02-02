@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="atk-AtkPlug.html" title="AtkPlug">
 <link rel="next" href="AtkRelation.html" title="AtkRelation">
-<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -42,19 +42,19 @@ object for an object of a particular GType.</p>
 <a name="AtkRegistry.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="AtkRegistry.html#AtkRegistry-struct" title="AtkRegistry">AtkRegistry</a>;
 <span class="returnvalue">void</span>                <a class="link" href="AtkRegistry.html#atk-registry-set-factory-type" title="atk_registry_set_factory_type ()">atk_registry_set_factory_type</a>       (<em class="parameter"><code><a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a> *registry</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> factory_type</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="AtkRegistry.html#atk-registry-get-factory-type" title="atk_registry_get_factory_type ()">atk_registry_get_factory_type</a>       (<em class="parameter"><code><a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a> *registry</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> type</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> factory_type</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="AtkRegistry.html#atk-registry-get-factory-type" title="atk_registry_get_factory_type ()">atk_registry_get_factory_type</a>       (<em class="parameter"><code><a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a> *registry</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);
 <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="returnvalue">AtkObjectFactory</span></a> *  <a class="link" href="AtkRegistry.html#atk-registry-get-factory" title="atk_registry_get_factory ()">atk_registry_get_factory</a>            (<em class="parameter"><code><a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a> *registry</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> type</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);
 <a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="returnvalue">AtkRegistry</span></a> *       <a class="link" href="AtkRegistry.html#atk-get-default-registry" title="atk_get_default_registry ()">atk_get_default_registry</a>            (<em class="parameter"><code><span class="type">void</span></code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="AtkRegistry.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  GObject
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----AtkRegistry
 </pre>
 </div>
@@ -81,10 +81,10 @@ The AtkRegistry structure should not be accessed directly.
 <div class="refsect2">
 <a name="atk-registry-set-factory-type"></a><h3>atk_registry_set_factory_type ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_registry_set_factory_type       (<em class="parameter"><code><a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a> *registry</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> factory_type</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> factory_type</code></em>);</pre>
 <p>
-Associate an <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> subclass with a <span class="type">GType</span>. Note:
+Associate an <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> subclass with a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a>. Note:
 The associated <em class="parameter"><code>factory_type</code></em> will thereafter be responsible for
 the creation of new <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> implementations for instances
 appropriate for <em class="parameter"><code>type</code></em>.
@@ -111,10 +111,10 @@ implement AtkObject appropriate for <em class="parameter"><code>type</code></em>
 <hr>
 <div class="refsect2">
 <a name="atk-registry-get-factory-type"></a><h3>atk_registry_get_factory_type ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               atk_registry_get_factory_type       (<em class="parameter"><code><a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a> *registry</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> type</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               atk_registry_get_factory_type       (<em class="parameter"><code><a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a> *registry</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);</pre>
 <p>
-Provides a <span class="type">GType</span> indicating the <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> subclass
+Provides a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> indicating the <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> subclass
 associated with <em class="parameter"><code>type</code></em>.
 </p>
 <div class="variablelist"><table border="0">
@@ -127,12 +127,12 @@ associated with <em class="parameter"><code>type</code></em>.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>a <span class="type">GType</span> with which to look up the associated <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> with which to look up the associated <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a>
 subclass</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <span class="type">GType</span> associated with type <em class="parameter"><code>type</code></em>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> associated with type <em class="parameter"><code>type</code></em>
 </td>
 </tr>
 </tbody>
@@ -142,7 +142,7 @@ subclass</td>
 <div class="refsect2">
 <a name="atk-registry-get-factory"></a><h3>atk_registry_get_factory ()</h3>
 <pre class="programlisting"><a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="returnvalue">AtkObjectFactory</span></a> *  atk_registry_get_factory            (<em class="parameter"><code><a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a> *registry</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> type</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);</pre>
 <p>
 Gets an <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> appropriate for creating <a href="AtkObject.html"><span class="type">AtkObjects</span></a>
 appropriate for <em class="parameter"><code>type</code></em>.
@@ -157,7 +157,7 @@ appropriate for <em class="parameter"><code>type</code></em>.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>a <span class="type">GType</span> with which to look up the associated <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> with which to look up the associated <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a>
 </td>
 </tr>
 <tr>
@@ -196,6 +196,6 @@ for whom accessibility information will be provided.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18.1</div>
+          Generated by GTK-Doc V1.18</div>
 </body>
 </html>

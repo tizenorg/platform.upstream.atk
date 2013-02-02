@@ -57,7 +57,8 @@ atk_sources = 	\
 	atktext.c		\
 	atkutil.c		\
 	atkmisc.c		\
-	atkvalue.c \
+	atkvalue.c 		\
+	atkversion.c 		\
 	atkwindow.c
 
 libatk_1_0_la_SOURCES = 	\
@@ -67,7 +68,6 @@ libatk_1_0_la_SOURCES = 	\
 libatkincludedir=$(includedir)/atk-1.0/atk
 
 atk_headers = \
-        atk.h			\
         atkaction.h		\
         atkcomponent.h		\
         atkdocument.h		\
@@ -99,7 +99,9 @@ atk_headers = \
         atkwindow.h
 
 libatkinclude_HEADERS =		\
+        atk.h			\
 	$(atk_headers)		\
+	$(top_builddir)/atk/atkversion.h \
 	atk-enum-types.h
 
 
@@ -156,6 +158,7 @@ introspection_sources = \
     $(atk_headers)	\
     $(atk_sources)
 introspection_generated_sources = \
+    $(top_builddir)/atk/atkversion.h 	\
     atk-enum-types.c	\
     atk-enum-types.h
 
@@ -216,7 +219,7 @@ atk-$(ATK_API_VERSION).lib: libatk-$(ATK_API_VERSION).la atk.def
 	lib -machine:$(LIB_EXE_MACHINE_FLAG) -name:libatk-$(ATK_API_VERSION)-$(LT_CURRENT_MINUS_AGE).dll -def:atk.def -out:$@
 
 
-EXTRA_DIST = atk.symbols atk.rc.in atkmarshal.list atkintl.h atk.rc
+EXTRA_DIST = atk.symbols atk.rc.in atkmarshal.list atkintl.h atk.rc atkversion.h.in
 
 dist-hook: ../build/win32/vs9/atk.vcproj ../build/win32/vs10/atk.vcxproj ../build/win32/vs10/atk.vcxproj.filters
 

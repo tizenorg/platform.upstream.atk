@@ -29,6 +29,10 @@
       <sub name="AtkText" link="AtkText.html"/>
       <sub name="AtkUtil" link="AtkUtil.html"/>
       <sub name="AtkValue" link="AtkValue.html"/>
+      <sub name="AtkWindow" link="AtkWindow.html"/>
+    </sub>
+    <sub name="Utilities" link="atk.html">
+      <sub name="Versioning macros" link="atk-Versioning-Utilities.html"/>
     </sub>
     <sub name="Index of all symbols" link="api-index-full.html"/>
     <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
@@ -355,6 +359,25 @@
     <keyword type="function" name="atk_value_get_minimum_value ()" link="AtkValue.html#atk-value-get-minimum-value"/>
     <keyword type="function" name="atk_value_set_current_value ()" link="AtkValue.html#atk-value-set-current-value"/>
     <keyword type="function" name="atk_value_get_minimum_increment ()" link="AtkValue.html#atk-value-get-minimum-increment" since="1.12"/>
+    <keyword type="struct" name="AtkWindow" link="AtkWindow.html#AtkWindow-struct"/>
+    <keyword type="signal" name="The &quot;activate&quot; signal" link="AtkWindow.html#AtkWindow-activate"/>
+    <keyword type="signal" name="The &quot;create&quot; signal" link="AtkWindow.html#AtkWindow-create"/>
+    <keyword type="signal" name="The &quot;deactivate&quot; signal" link="AtkWindow.html#AtkWindow-deactivate"/>
+    <keyword type="signal" name="The &quot;destroy&quot; signal" link="AtkWindow.html#AtkWindow-destroy"/>
+    <keyword type="signal" name="The &quot;maximize&quot; signal" link="AtkWindow.html#AtkWindow-maximize"/>
+    <keyword type="signal" name="The &quot;minimize&quot; signal" link="AtkWindow.html#AtkWindow-minimize"/>
+    <keyword type="signal" name="The &quot;move&quot; signal" link="AtkWindow.html#AtkWindow-move"/>
+    <keyword type="signal" name="The &quot;resize&quot; signal" link="AtkWindow.html#AtkWindow-resize"/>
+    <keyword type="signal" name="The &quot;restore&quot; signal" link="AtkWindow.html#AtkWindow-restore"/>
+    <keyword type="function" name="atk_get_major_version ()" link="atk-Versioning-Utilities.html#atk-get-major-version" since="2.7.4"/>
+    <keyword type="function" name="atk_get_minor_version ()" link="atk-Versioning-Utilities.html#atk-get-minor-version" since="2.7.4"/>
+    <keyword type="function" name="atk_get_micro_version ()" link="atk-Versioning-Utilities.html#atk-get-micro-version" since="2.7.4"/>
+    <keyword type="function" name="atk_get_binary_age ()" link="atk-Versioning-Utilities.html#atk-get-binary-age" since="2.7.4"/>
+    <keyword type="function" name="atk_get_interface_age ()" link="atk-Versioning-Utilities.html#atk-get-interface-age" since="2.7.4"/>
+    <keyword type="macro" name="ATK_MAJOR_VERSION" link="atk-Versioning-Utilities.html#ATK-MAJOR-VERSION:CAPS" since="2.7.4"/>
+    <keyword type="macro" name="ATK_MINOR_VERSION" link="atk-Versioning-Utilities.html#ATK-MINOR-VERSION:CAPS" since="2.7.4"/>
+    <keyword type="macro" name="ATK_MICRO_VERSION" link="atk-Versioning-Utilities.html#ATK-MICRO-VERSION:CAPS" since="2.7.4"/>
+    <keyword type="macro" name="ATK_CHECK_VERSION()" link="atk-Versioning-Utilities.html#ATK-CHECK-VERSION:CAPS" since="2.7.4"/>
     <keyword type="constant" name="ATK_HYPERLINK_IS_INLINE" link="AtkHyperlink.html#ATK-HYPERLINK-IS-INLINE:CAPS"/>
     <keyword type="constant" name="ATK_ROLE_INVALID" link="AtkObject.html#ATK-ROLE-INVALID:CAPS"/>
     <keyword type="constant" name="ATK_ROLE_ACCEL_LABEL" link="AtkObject.html#ATK-ROLE-ACCEL-LABEL:CAPS"/>

@@ -42,6 +42,7 @@
     <ClCompile Include="..\..\..\atk\atkutil.c"><Filter>Source Files</Filter></ClCompile>
     <ClCompile Include="..\..\..\atk\atkmisc.c"><Filter>Source Files</Filter></ClCompile>
     <ClCompile Include="..\..\..\atk\atkvalue.c"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="..\..\..\atk\atkversion.c"><Filter>Source Files</Filter></ClCompile>
     <ClCompile Include="..\..\..\atk\atkwindow.c"><Filter>Source Files</Filter></ClCompile>
     <ClCompile Include="..\..\..\atk\atk-enum-types.c"><Filter>Source Files</Filter></ClCompile>
   </ItemGroup>
