@@ -1,13 +1,13 @@
 %bcond_with introspection
 
 Name:           atk
-Version:        2.7.3
+Version:        2.7.4
 Release:        0
 License:        LGPL-2.1+
 Summary:        An Accessibility ToolKit
 Url:            http://www.gtk.org/
 Group:          System/Libraries
-Source:         http://download.gnome.org/sources/atk/2.6/%{name}-%{version}.tar.xz
+Source:         http://download.gnome.org/sources/atk/2.7/%{name}-%{version}.tar.xz
 Source98:       baselibs.conf
 BuildRequires:  fdupes
 BuildRequires:  gcc-c++
