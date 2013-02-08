@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="atk-AtkSocket.html" title="AtkSocket">
 <link rel="next" href="AtkStateSet.html" title="AtkStateSet">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -39,9 +39,9 @@
 <a name="atk-AtkState.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">enum                <a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType">AtkStateType</a>;
 typedef             <a class="link" href="atk-AtkState.html#AtkState" title="AtkState">AtkState</a>;
-<a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="returnvalue">AtkStateType</span></a>        <a class="link" href="atk-AtkState.html#atk-state-type-register" title="atk_state_type_register ()">atk_state_type_register</a>             (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="atk-AtkState.html#atk-state-type-get-name" title="atk_state_type_get_name ()">atk_state_type_get_name</a>             (<em class="parameter"><code><a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="type">AtkStateType</span></a> type</code></em>);
-<a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="returnvalue">AtkStateType</span></a>        <a class="link" href="atk-AtkState.html#atk-state-type-for-name" title="atk_state_type_for_name ()">atk_state_type_for_name</a>             (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);
+<a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="returnvalue">AtkStateType</span></a>        <a class="link" href="atk-AtkState.html#atk-state-type-register" title="atk_state_type_register ()">atk_state_type_register</a>             (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="atk-AtkState.html#atk-state-type-get-name" title="atk_state_type_get_name ()">atk_state_type_get_name</a>             (<em class="parameter"><code><a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="type">AtkStateType</span></a> type</code></em>);
+<a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="returnvalue">AtkStateType</span></a>        <a class="link" href="atk-AtkState.html#atk-state-type-for-name" title="atk_state_type_for_name ()">atk_state_type_for_name</a>             (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -360,7 +360,7 @@ The AtkState value should not be referenceed directly.
 <hr>
 <div class="refsect2">
 <a name="atk-state-type-register"></a><h3>atk_state_type_register ()</h3>
-<pre class="programlisting"><a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="returnvalue">AtkStateType</span></a>        atk_state_type_register             (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="returnvalue">AtkStateType</span></a>        atk_state_type_register             (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
 <p>
 Register a new object state.
 </p>
@@ -381,7 +381,7 @@ Register a new object state.
 <hr>
 <div class="refsect2">
 <a name="atk-state-type-get-name"></a><h3>atk_state_type_get_name ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_state_type_get_name             (<em class="parameter"><code><a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="type">AtkStateType</span></a> type</code></em>);</pre>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_state_type_get_name             (<em class="parameter"><code><a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="type">AtkStateType</span></a> type</code></em>);</pre>
 <p>
 Gets the description string describing the <a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="type">AtkStateType</span></a> <em class="parameter"><code>type</code></em>.
 </p>
@@ -402,7 +402,7 @@ Gets the description string describing the <a class="link" href="atk-AtkState.ht
 <hr>
 <div class="refsect2">
 <a name="atk-state-type-for-name"></a><h3>atk_state_type_for_name ()</h3>
-<pre class="programlisting"><a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="returnvalue">AtkStateType</span></a>        atk_state_type_for_name             (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="returnvalue">AtkStateType</span></a>        atk_state_type_for_name             (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
 <p>
 Gets the <a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkStateType"><span class="type">AtkStateType</span></a> corresponding to the description string <em class="parameter"><code>name</code></em>.
 </p>
@@ -425,6 +425,6 @@ Gets the <a class="link" href="atk-AtkState.html#AtkStateType" title="enum AtkSt
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

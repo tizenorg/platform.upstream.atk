@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkAction.html" title="AtkAction">
 <link rel="next" href="AtkDocument.html" title="AtkDocument">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -45,49 +45,49 @@ the screen.</p>
 <div class="refsynopsisdiv">
 <a name="AtkComponent.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="AtkComponent.html#AtkComponent-struct" title="AtkComponent">AtkComponent</a>;
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               <a class="link" href="AtkComponent.html#atk-component-add-focus-handler" title="atk_component_add_focus_handler ()">atk_component_add_focus_handler</a>     (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+<span class="returnvalue">guint</span>               <a class="link" href="AtkComponent.html#atk-component-add-focus-handler" title="atk_component_add_focus_handler ()">atk_component_add_focus_handler</a>     (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
                                                          <em class="parameter"><code><span class="type">AtkFocusHandler</span> handler</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkComponent.html#atk-component-contains" title="atk_component_contains ()">atk_component_contains</a>              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkComponent.html#atk-component-contains" title="atk_component_contains ()">atk_component_contains</a>              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> y</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkComponent.html#atk-component-get-extents" title="atk_component_get_extents ()">atk_component_get_extents</a>           (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *height</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *y</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);
 <a class="link" href="AtkObject.html#AtkLayer" title="enum AtkLayer"><span class="returnvalue">AtkLayer</span></a>            <a class="link" href="AtkComponent.html#atk-component-get-layer" title="atk_component_get_layer ()">atk_component_get_layer</a>             (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkComponent.html#atk-component-get-mdi-zorder" title="atk_component_get_mdi_zorder ()">atk_component_get_mdi_zorder</a>        (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkComponent.html#atk-component-get-mdi-zorder" title="atk_component_get_mdi_zorder ()">atk_component_get_mdi_zorder</a>        (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkComponent.html#atk-component-get-position" title="atk_component_get_position ()">atk_component_get_position</a>          (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *y</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkComponent.html#atk-component-get-size" title="atk_component_get_size ()">atk_component_get_size</a>              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *height</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkComponent.html#atk-component-grab-focus" title="atk_component_grab_focus ()">atk_component_grab_focus</a>            (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *height</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkComponent.html#atk-component-grab-focus" title="atk_component_grab_focus ()">atk_component_grab_focus</a>            (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkComponent.html#atk-component-ref-accessible-at-point" title="atk_component_ref_accessible_at_point ()">atk_component_ref_accessible_at_point</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> y</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkComponent.html#atk-component-remove-focus-handler" title="atk_component_remove_focus_handler ()">atk_component_remove_focus_handler</a>  (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> handler_id</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkComponent.html#atk-component-set-extents" title="atk_component_set_extents ()">atk_component_set_extents</a>           (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint</span> handler_id</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkComponent.html#atk-component-set-extents" title="atk_component_set_extents ()">atk_component_set_extents</a>           (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkComponent.html#atk-component-set-position" title="atk_component_set_position ()">atk_component_set_position</a>          (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkComponent.html#atk-component-set-position" title="atk_component_set_position ()">atk_component_set_position</a>          (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> y</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkComponent.html#atk-component-set-size" title="atk_component_set_size ()">atk_component_set_size</a>              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>             <a class="link" href="AtkComponent.html#atk-component-get-alpha" title="atk_component_get_alpha ()">atk_component_get_alpha</a>             (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkComponent.html#atk-component-set-size" title="atk_component_set_size ()">atk_component_set_size</a>              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> height</code></em>);
+<span class="returnvalue">gdouble</span>             <a class="link" href="AtkComponent.html#atk-component-get-alpha" title="atk_component_get_alpha ()">atk_component_get_alpha</a>             (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -106,7 +106,7 @@ AtkComponent is implemented by
 <div class="refsect1">
 <a name="AtkComponent.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="AtkComponent.html#AtkComponent-bounds-changed" title='The "bounds-changed" signal'>bounds-changed</a>"                                 : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="AtkComponent.html#AtkComponent-bounds-changed" title='The "bounds-changed" signal'>bounds-changed</a>"                                 : <code class="literal">Run Last</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -137,7 +137,7 @@ The AtkComponent structure does not contain any fields.
 <hr>
 <div class="refsect2">
 <a name="atk-component-add-focus-handler"></a><h3>atk_component_add_focus_handler ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               atk_component_add_focus_handler     (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+<pre class="programlisting"><span class="returnvalue">guint</span>               atk_component_add_focus_handler     (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
                                                          <em class="parameter"><code><span class="type">AtkFocusHandler</span> handler</code></em>);</pre>
 <p>
 Add the specified handler to the set of functions to be called 
@@ -167,9 +167,9 @@ or zero if the handler was already added.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-component-contains"></a><h3>atk_component_contains ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_component_contains              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_component_contains              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> y</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);</pre>
 <p>
 Checks whether the specified point is within the extent of the <em class="parameter"><code>component</code></em>.
@@ -198,7 +198,7 @@ or to the components top level window</td>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> indicating whether the specified point is within
+<code class="literal">TRUE</code> or <code class="literal">FALSE</code> indicating whether the specified point is within
 the extent of the <em class="parameter"><code>component</code></em> or not</td>
 </tr>
 </tbody>
@@ -208,10 +208,10 @@ the extent of the <em class="parameter"><code>component</code></em> or not</td>
 <div class="refsect2">
 <a name="atk-component-get-extents"></a><h3>atk_component_get_extents ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_component_get_extents           (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *height</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *y</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);</pre>
 <p>
 Gets the rectangle which gives the extent of the <em class="parameter"><code>component</code></em>.
@@ -226,19 +226,19 @@ Gets the rectangle which gives the extent of the <em class="parameter"><code>com
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
-<td>address of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to put x coordinate</td>
+<td>address of <span class="type">gint</span> to put x coordinate</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>y</code></em> :</span></p></td>
-<td>address of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to put y coordinate</td>
+<td>address of <span class="type">gint</span> to put y coordinate</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>width</code></em> :</span></p></td>
-<td>address of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to put width</td>
+<td>address of <span class="type">gint</span> to put width</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>height</code></em> :</span></p></td>
-<td>address of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to put height</td>
+<td>address of <span class="type">gint</span> to put height</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>coord_type</code></em> :</span></p></td>
@@ -273,7 +273,7 @@ Gets the layer of the component.
 <hr>
 <div class="refsect2">
 <a name="atk-component-get-mdi-zorder"></a><h3>atk_component_get_mdi_zorder ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_component_get_mdi_zorder        (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_component_get_mdi_zorder        (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);</pre>
 <p>
 Gets the zorder of the component. The value G_MININT will be returned 
 if the layer of the component is not ATK_LAYER_MDI or ATK_LAYER_WINDOW.
@@ -299,8 +299,8 @@ container.</td>
 <div class="refsect2">
 <a name="atk-component-get-position"></a><h3>atk_component_get_position ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_component_get_position          (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *y</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);</pre>
 <p>
 Gets the position of <em class="parameter"><code>component</code></em> in the form of 
@@ -316,11 +316,11 @@ a point specifying <em class="parameter"><code>component</code></em>'s top-left 
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
-<td>address of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to put x coordinate position</td>
+<td>address of <span class="type">gint</span> to put x coordinate position</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>y</code></em> :</span></p></td>
-<td>address of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to put y coordinate position</td>
+<td>address of <span class="type">gint</span> to put y coordinate position</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>coord_type</code></em> :</span></p></td>
@@ -334,8 +334,8 @@ or to the components top level window</td>
 <div class="refsect2">
 <a name="atk-component-get-size"></a><h3>atk_component_get_size ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_component_get_size              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *height</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *height</code></em>);</pre>
 <p>
 Gets the size of the <em class="parameter"><code>component</code></em> in terms of width and height.
 </p>
@@ -349,12 +349,12 @@ Gets the size of the <em class="parameter"><code>component</code></em> in terms 
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>width</code></em> :</span></p></td>
-<td>address of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to put width of <em class="parameter"><code>component</code></em>
+<td>address of <span class="type">gint</span> to put width of <em class="parameter"><code>component</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>height</code></em> :</span></p></td>
-<td>address of <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to put height of <em class="parameter"><code>component</code></em>
+<td>address of <span class="type">gint</span> to put height of <em class="parameter"><code>component</code></em>
 </td>
 </tr>
 </tbody>
@@ -363,7 +363,7 @@ Gets the size of the <em class="parameter"><code>component</code></em> in terms 
 <hr>
 <div class="refsect2">
 <a name="atk-component-grab-focus"></a><h3>atk_component_grab_focus ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_component_grab_focus            (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_component_grab_focus            (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);</pre>
 <p>
 Grabs focus for this <em class="parameter"><code>component</code></em>.
 </p>
@@ -378,7 +378,7 @@ Grabs focus for this <em class="parameter"><code>component</code></em>.
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if successful, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+<code class="literal">TRUE</code> if successful, <code class="literal">FALSE</code> otherwise.</td>
 </tr>
 </tbody>
 </table></div>
@@ -388,8 +388,8 @@ Grabs focus for this <em class="parameter"><code>component</code></em>.
 <a name="atk-component-ref-accessible-at-point"></a><h3>atk_component_ref_accessible_at_point ()</h3>
 <pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_component_ref_accessible_at_point
                                                         (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> y</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);</pre>
 <p>
 Gets a reference to the accessible child, if one exists, at the
@@ -428,7 +428,7 @@ or to the components top level window</td>
 <div class="refsect2">
 <a name="atk-component-remove-focus-handler"></a><h3>atk_component_remove_focus_handler ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_component_remove_focus_handler  (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> handler_id</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">guint</span> handler_id</code></em>);</pre>
 <p>
 Remove the handler specified by <em class="parameter"><code>handler_id</code></em> from the list of
 functions to be executed when this object receives focus events 
@@ -453,11 +453,11 @@ from <em class="parameter"><code>component</code></em>
 <hr>
 <div class="refsect2">
 <a name="atk-component-set-extents"></a><h3>atk_component_set_extents ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_component_set_extents           (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_component_set_extents           (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);</pre>
 <p>
 Sets the extents of <em class="parameter"><code>component</code></em>.
@@ -496,7 +496,7 @@ or to the components top level window</td>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> whether the extents were set or not</td>
+<code class="literal">TRUE</code> or <code class="literal">FALSE</code> whether the extents were set or not</td>
 </tr>
 </tbody>
 </table></div>
@@ -504,9 +504,9 @@ or to the components top level window</td>
 <hr>
 <div class="refsect2">
 <a name="atk-component-set-position"></a><h3>atk_component_set_position ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_component_set_position          (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_component_set_position          (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> y</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkUtil.html#AtkCoordType" title="enum AtkCoordType"><span class="type">AtkCoordType</span></a> coord_type</code></em>);</pre>
 <p>
 Sets the postition of <em class="parameter"><code>component</code></em>.
@@ -535,7 +535,7 @@ or to the components top level window</td>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> whether or not the position was set or not</td>
+<code class="literal">TRUE</code> or <code class="literal">FALSE</code> whether or not the position was set or not</td>
 </tr>
 </tbody>
 </table></div>
@@ -543,9 +543,9 @@ or to the components top level window</td>
 <hr>
 <div class="refsect2">
 <a name="atk-component-set-size"></a><h3>atk_component_set_size ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_component_set_size              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_component_set_size              (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>
 Set the size of the <em class="parameter"><code>component</code></em> in terms of width and height.
 </p>
@@ -570,7 +570,7 @@ Set the size of the <em class="parameter"><code>component</code></em> in terms o
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> whether the size was set or not</td>
+<code class="literal">TRUE</code> or <code class="literal">FALSE</code> whether the size was set or not</td>
 </tr>
 </tbody>
 </table></div>
@@ -578,7 +578,7 @@ Set the size of the <em class="parameter"><code>component</code></em> in terms o
 <hr>
 <div class="refsect2">
 <a name="atk-component-get-alpha"></a><h3>atk_component_get_alpha ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>             atk_component_get_alpha             (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>             atk_component_get_alpha             (<em class="parameter"><code><a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *component</code></em>);</pre>
 <p>
 Returns the alpha value (i.e. the opacity) for this
 <em class="parameter"><code>component</code></em>, on a scale from 0 (fully transparent) to 1.0
@@ -607,7 +607,7 @@ Returns the alpha value (i.e. the opacity) for this
 <a name="AtkComponent-bounds-changed"></a><h3>The <code class="literal">"bounds-changed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkComponent.html" title="AtkComponent"><span class="type">AtkComponent</span></a> *atkcomponent,
                                                         <span class="type">AtkRectangle</span> *arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)         : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>      user_data)         : <code class="literal">Run Last</code></pre>
 <p>
 The 'bounds-changed" signal is emitted when the bposition or size of the
 a component changes.
@@ -634,6 +634,6 @@ a component changes.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

@@ -126,6 +126,7 @@ atk_role_get_type (void)
       { ATK_ROLE_IMAGE_MAP, "ATK_ROLE_IMAGE_MAP", "image-map" },
       { ATK_ROLE_NOTIFICATION, "ATK_ROLE_NOTIFICATION", "notification" },
       { ATK_ROLE_INFO_BAR, "ATK_ROLE_INFO_BAR", "info-bar" },
+      { ATK_ROLE_LEVEL_BAR, "ATK_ROLE_LEVEL_BAR", "level-bar" },
       { ATK_ROLE_LAST_DEFINED, "ATK_ROLE_LAST_DEFINED", "last-defined" },
       { 0, NULL, NULL }
     };

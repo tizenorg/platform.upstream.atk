@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=glib&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-15 12:06+0100\n"
+"POT-Creation-Date: 2013-02-04 20:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,35 +18,35 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../atk/atkhyperlink.c:103
+#: ../atk/atkhyperlink.c:104
 msgid "Selected Link"
 msgstr ""
 
-#: ../atk/atkhyperlink.c:104
+#: ../atk/atkhyperlink.c:105
 msgid "Specifies whether the AtkHyperlink object is selected"
 msgstr ""
 
-#: ../atk/atkhyperlink.c:110
+#: ../atk/atkhyperlink.c:111
 msgid "Number of Anchors"
 msgstr ""
 
-#: ../atk/atkhyperlink.c:111
+#: ../atk/atkhyperlink.c:112
 msgid "The number of anchors associated with the AtkHyperlink object"
 msgstr ""
 
-#: ../atk/atkhyperlink.c:119
+#: ../atk/atkhyperlink.c:120
 msgid "End index"
 msgstr ""
 
-#: ../atk/atkhyperlink.c:120
+#: ../atk/atkhyperlink.c:121
 msgid "The end index of the AtkHyperlink object"
 msgstr ""
 
-#: ../atk/atkhyperlink.c:128
+#: ../atk/atkhyperlink.c:129
 msgid "Start index"
 msgstr ""
 
-#: ../atk/atkhyperlink.c:129
+#: ../atk/atkhyperlink.c:130
 msgid "The start index of the AtkHyperlink object"
 msgstr ""
 
@@ -455,124 +455,124 @@ msgstr ""
 msgid "info bar"
 msgstr ""
 
-#: ../atk/atkobject.c:514
+#: ../atk/atkobject.c:515
 msgid "Accessible Name"
 msgstr ""
 
-#: ../atk/atkobject.c:515
+#: ../atk/atkobject.c:516
 msgid "Object instance's name formatted for assistive technology access"
 msgstr ""
 
-#: ../atk/atkobject.c:521
+#: ../atk/atkobject.c:522
 msgid "Accessible Description"
 msgstr ""
 
-#: ../atk/atkobject.c:522
+#: ../atk/atkobject.c:523
 msgid "Description of an object, formatted for assistive technology access"
 msgstr ""
 
-#: ../atk/atkobject.c:528
+#: ../atk/atkobject.c:529
 msgid "Accessible Parent"
 msgstr ""
 
-#: ../atk/atkobject.c:529
+#: ../atk/atkobject.c:530
 msgid "Is used to notify that the parent has changed"
 msgstr ""
 
-#: ../atk/atkobject.c:535
+#: ../atk/atkobject.c:536
 msgid "Accessible Value"
 msgstr ""
 
-#: ../atk/atkobject.c:536
+#: ../atk/atkobject.c:537
 msgid "Is used to notify that the value has changed"
 msgstr ""
 
-#: ../atk/atkobject.c:544
+#: ../atk/atkobject.c:545
 msgid "Accessible Role"
 msgstr ""
 
-#: ../atk/atkobject.c:545
+#: ../atk/atkobject.c:546
 msgid "The accessible role of this object"
 msgstr ""
 
-#: ../atk/atkobject.c:553
+#: ../atk/atkobject.c:554
 msgid "Accessible Layer"
 msgstr ""
 
-#: ../atk/atkobject.c:554
+#: ../atk/atkobject.c:555
 msgid "The accessible layer of this object"
 msgstr ""
 
-#: ../atk/atkobject.c:562
+#: ../atk/atkobject.c:563
 msgid "Accessible MDI Value"
 msgstr ""
 
-#: ../atk/atkobject.c:563
+#: ../atk/atkobject.c:564
 msgid "The accessible MDI value of this object"
 msgstr ""
 
-#: ../atk/atkobject.c:571
+#: ../atk/atkobject.c:572
 msgid "Accessible Table Caption"
 msgstr ""
 
-#: ../atk/atkobject.c:572
+#: ../atk/atkobject.c:573
 msgid ""
 "Is used to notify that the table caption has changed; this property should "
 "not be used. accessible-table-caption-object should be used instead"
 msgstr ""
 
-#: ../atk/atkobject.c:578
+#: ../atk/atkobject.c:579
 msgid "Accessible Table Column Header"
 msgstr ""
 
-#: ../atk/atkobject.c:579
+#: ../atk/atkobject.c:580
 msgid "Is used to notify that the table column header has changed"
 msgstr ""
 
-#: ../atk/atkobject.c:585
+#: ../atk/atkobject.c:586
 msgid "Accessible Table Column Description"
 msgstr ""
 
-#: ../atk/atkobject.c:586
+#: ../atk/atkobject.c:587
 msgid "Is used to notify that the table column description has changed"
 msgstr ""
 
-#: ../atk/atkobject.c:592
+#: ../atk/atkobject.c:593
 msgid "Accessible Table Row Header"
 msgstr ""
 
-#: ../atk/atkobject.c:593
+#: ../atk/atkobject.c:594
 msgid "Is used to notify that the table row header has changed"
 msgstr ""
 
-#: ../atk/atkobject.c:599
+#: ../atk/atkobject.c:600
 msgid "Accessible Table Row Description"
 msgstr ""
 
-#: ../atk/atkobject.c:600
+#: ../atk/atkobject.c:601
 msgid "Is used to notify that the table row description has changed"
 msgstr ""
 
-#: ../atk/atkobject.c:606
+#: ../atk/atkobject.c:607
 msgid "Accessible Table Summary"
 msgstr ""
 
-#: ../atk/atkobject.c:607
+#: ../atk/atkobject.c:608
 msgid "Is used to notify that the table summary has changed"
 msgstr ""
 
-#: ../atk/atkobject.c:613
+#: ../atk/atkobject.c:614
 msgid "Accessible Table Caption Object"
 msgstr ""
 
-#: ../atk/atkobject.c:614
+#: ../atk/atkobject.c:615
 msgid "Is used to notify that the table caption has changed"
 msgstr ""
 
-#: ../atk/atkobject.c:620
+#: ../atk/atkobject.c:621
 msgid "Number of Accessible Hypertext Links"
 msgstr ""
 
-#: ../atk/atkobject.c:621
+#: ../atk/atkobject.c:622
 msgid "The number of links which the current AtkHypertext has"
 msgstr ""

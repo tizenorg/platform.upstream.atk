@@ -281,6 +281,7 @@ the object changed.
 @ATK_ROLE_IMAGE_MAP: 
 @ATK_ROLE_NOTIFICATION: 
 @ATK_ROLE_INFO_BAR: 
+@ATK_ROLE_LEVEL_BAR: 
 @ATK_ROLE_LAST_DEFINED: 
 
 <!-- ##### FUNCTION atk_role_register ##### -->

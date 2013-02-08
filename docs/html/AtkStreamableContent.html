@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkStateSet.html" title="AtkStateSet">
 <link rel="next" href="AtkTable.html" title="AtkTable">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -40,15 +40,15 @@
 <div class="refsynopsisdiv">
 <a name="AtkStreamableContent.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="AtkStreamableContent.html#AtkStreamableContent-struct" title="AtkStreamableContent">AtkStreamableContent</a>;
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkStreamableContent.html#atk-streamable-content-get-n-mime-types" title="atk_streamable_content_get_n_mime_types ()">atk_streamable_content_get_n_mime_types</a>
+<span class="returnvalue">gint</span>                <a class="link" href="AtkStreamableContent.html#atk-streamable-content-get-n-mime-types" title="atk_streamable_content_get_n_mime_types ()">atk_streamable_content_get_n_mime_types</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkStreamableContent.html#atk-streamable-content-get-mime-type" title="atk_streamable_content_get_mime_type ()">atk_streamable_content_get_mime_type</a>
+const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkStreamableContent.html#atk-streamable-content-get-mime-type" title="atk_streamable_content_get_mime_type ()">atk_streamable_content_get_mime_type</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-IO-Channels.html#GIOChannel"><span class="returnvalue">GIOChannel</span></a> *        <a class="link" href="AtkStreamableContent.html#atk-streamable-content-get-stream" title="atk_streamable_content_get_stream ()">atk_streamable_content_get_stream</a>   (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkStreamableContent.html#atk-streamable-content-get-uri" title="atk_streamable_content_get_uri ()">atk_streamable_content_get_uri</a>      (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);
+<span class="returnvalue">GIOChannel</span> *        <a class="link" href="AtkStreamableContent.html#atk-streamable-content-get-stream" title="atk_streamable_content_get_stream ()">atk_streamable_content_get_stream</a>   (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkStreamableContent.html#atk-streamable-content-get-uri" title="atk_streamable_content_get_uri ()">atk_streamable_content_get_uri</a>      (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -91,7 +91,7 @@ The AtkStreamableContent structure does not contain any fields.
 <hr>
 <div class="refsect2">
 <a name="atk-streamable-content-get-n-mime-types"></a><h3>atk_streamable_content_get_n_mime_types ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_streamable_content_get_n_mime_types
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_streamable_content_get_n_mime_types
                                                         (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>);</pre>
 <p>
 Gets the number of mime types supported by this object.
@@ -113,9 +113,9 @@ Gets the number of mime types supported by this object.
 <hr>
 <div class="refsect2">
 <a name="atk-streamable-content-get-mime-type"></a><h3>atk_streamable_content_get_mime_type ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_streamable_content_get_mime_type
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_streamable_content_get_mime_type
                                                         (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);</pre>
 <p>
 Gets the character string of the specified mime type. The first mime
 type is at position 0, the second at position 1, and so on.
@@ -142,8 +142,8 @@ should not free the character string.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-streamable-content-get-stream"></a><h3>atk_streamable_content_get_stream ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-IO-Channels.html#GIOChannel"><span class="returnvalue">GIOChannel</span></a> *        atk_streamable_content_get_stream   (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">GIOChannel</span> *        atk_streamable_content_get_stream   (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>);</pre>
 <p>
 Gets the content in the specified mime type.
 </p>
@@ -160,7 +160,7 @@ Gets the content in the specified mime type.
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>A <a href="http://library.gnome.org/devel/glib/unstable/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> which contains the content in the
+<td>A <span class="type">GIOChannel</span> which contains the content in the
 specified mime type. <span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
 </td>
 </tr>
@@ -170,8 +170,8 @@ specified mime type. <span class="annotation">[<a href="http://foldoc.org/transf
 <hr>
 <div class="refsect2">
 <a name="atk-streamable-content-get-uri"></a><h3>atk_streamable_content_get_uri ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_streamable_content_get_uri      (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);</pre>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_streamable_content_get_uri      (<em class="parameter"><code><a class="link" href="AtkStreamableContent.html" title="AtkStreamableContent"><span class="type">AtkStreamableContent</span></a> *streamable</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>);</pre>
 <p>
 Get a string representing a URI in IETF standard format
 (see http://www.ietf.org/rfc/rfc2396.txt) from which the object's content
@@ -208,6 +208,6 @@ can be constructed.</td>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

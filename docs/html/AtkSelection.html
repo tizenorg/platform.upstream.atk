@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkRelationSet.html" title="AtkRelationSet">
 <link rel="next" href="atk-AtkSocket.html" title="AtkSocket">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -45,17 +45,17 @@ can be selected.</p>
 <div class="refsynopsisdiv">
 <a name="AtkSelection.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="AtkSelection.html#AtkSelection-struct" title="AtkSelection">AtkSelection</a>;
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkSelection.html#atk-selection-add-selection" title="atk_selection_add_selection ()">atk_selection_add_selection</a>         (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkSelection.html#atk-selection-clear-selection" title="atk_selection_clear_selection ()">atk_selection_clear_selection</a>       (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkSelection.html#atk-selection-add-selection" title="atk_selection_add_selection ()">atk_selection_add_selection</a>         (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkSelection.html#atk-selection-clear-selection" title="atk_selection_clear_selection ()">atk_selection_clear_selection</a>       (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkSelection.html#atk-selection-ref-selection" title="atk_selection_ref_selection ()">atk_selection_ref_selection</a>         (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkSelection.html#atk-selection-get-selection-count" title="atk_selection_get_selection_count ()">atk_selection_get_selection_count</a>   (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkSelection.html#atk-selection-is-child-selected" title="atk_selection_is_child_selected ()">atk_selection_is_child_selected</a>     (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkSelection.html#atk-selection-remove-selection" title="atk_selection_remove_selection ()">atk_selection_remove_selection</a>      (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkSelection.html#atk-selection-select-all-selection" title="atk_selection_select_all_selection ()">atk_selection_select_all_selection</a>  (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkSelection.html#atk-selection-get-selection-count" title="atk_selection_get_selection_count ()">atk_selection_get_selection_count</a>   (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkSelection.html#atk-selection-is-child-selected" title="atk_selection_is_child_selected ()">atk_selection_is_child_selected</a>     (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkSelection.html#atk-selection-remove-selection" title="atk_selection_remove_selection ()">atk_selection_remove_selection</a>      (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkSelection.html#atk-selection-select-all-selection" title="atk_selection_select_all_selection ()">atk_selection_select_all_selection</a>  (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -74,7 +74,7 @@ AtkSelection is implemented by
 <div class="refsect1">
 <a name="AtkSelection.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="AtkSelection.html#AtkSelection-selection-changed" title='The "selection-changed" signal'>selection-changed</a>"                              : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="AtkSelection.html#AtkSelection-selection-changed" title='The "selection-changed" signal'>selection-changed</a>"                              : <code class="literal">Run Last</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -104,8 +104,8 @@ The AtkAction structure does not contain any fields.
 <hr>
 <div class="refsect2">
 <a name="atk-selection-add-selection"></a><h3>atk_selection_add_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_selection_add_selection         (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_selection_add_selection         (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);</pre>
 <p>
 Adds the specified accessible child of the object to the
 object's selection.
@@ -115,11 +115,11 @@ object's selection.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> instance that implements AtkSelectionIface</td>
+<td>a <span class="type">GObject</span> instance that implements AtkSelectionIface</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> specifying the child index.</td>
+<td>a <span class="type">gint</span> specifying the child index.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -131,7 +131,7 @@ object's selection.
 <hr>
 <div class="refsect2">
 <a name="atk-selection-clear-selection"></a><h3>atk_selection_clear_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_selection_clear_selection       (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_selection_clear_selection       (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);</pre>
 <p>
 Clears the selection in the object so that no children in the object
 are selected.
@@ -141,7 +141,7 @@ are selected.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> instance that implements AtkSelectionIface</td>
+<td>a <span class="type">GObject</span> instance that implements AtkSelectionIface</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -154,11 +154,11 @@ are selected.
 <div class="refsect2">
 <a name="atk-selection-ref-selection"></a><h3>atk_selection_ref_selection ()</h3>
 <pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_selection_ref_selection         (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);</pre>
 <p>
 Gets a reference to the accessible object representing the specified 
 selected child of the object.
-Note: callers should not rely on <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> or on a zero value for
+Note: callers should not rely on <code class="literal">NULL</code> or on a zero value for
 indication of whether AtkSelectionIface is implemented, they should
 use type checking/interface checking macros or the
 <code class="function">atk_get_accessible_value()</code> convenience method.
@@ -168,17 +168,17 @@ use type checking/interface checking macros or the
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> instance that implements AtkSelectionIface</td>
+<td>a <span class="type">GObject</span> instance that implements AtkSelectionIface</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> specifying the index in the selection set.  (e.g. the
+<td>a <span class="type">gint</span> specifying the index in the selection set.  (e.g. the
 ith selection as opposed to the ith child).</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>an <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> representing the selected
-accessible , or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>selection</code></em> does not implement this interface. <span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
+accessible , or <code class="literal">NULL</code> if <em class="parameter"><code>selection</code></em> does not implement this interface. <span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
 </td>
 </tr>
 </tbody>
@@ -187,10 +187,10 @@ accessible , or <a href="http://library.gnome.org/devel/glib/unstable/glib-Stand
 <hr>
 <div class="refsect2">
 <a name="atk-selection-get-selection-count"></a><h3>atk_selection_get_selection_count ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_selection_get_selection_count   (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_selection_get_selection_count   (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);</pre>
 <p>
 Gets the number of accessible children currently selected.
-Note: callers should not rely on <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> or on a zero value for
+Note: callers should not rely on <code class="literal">NULL</code> or on a zero value for
 indication of whether AtkSelectionIface is implemented, they should
 use type checking/interface checking macros or the
 <code class="function">atk_get_accessible_value()</code> convenience method.
@@ -200,7 +200,7 @@ use type checking/interface checking macros or the
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> instance that implements AtkSelectionIface</td>
+<td>a <span class="type">GObject</span> instance that implements AtkSelectionIface</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -213,11 +213,11 @@ if <em class="parameter"><code>selection</code></em> does not implement this int
 <hr>
 <div class="refsect2">
 <a name="atk-selection-is-child-selected"></a><h3>atk_selection_is_child_selected ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_selection_is_child_selected     (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_selection_is_child_selected     (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);</pre>
 <p>
 Determines if the current child of this object is selected
-Note: callers should not rely on <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> or on a zero value for
+Note: callers should not rely on <code class="literal">NULL</code> or on a zero value for
 indication of whether AtkSelectionIface is implemented, they should
 use type checking/interface checking macros or the
 <code class="function">atk_get_accessible_value()</code> convenience method.
@@ -227,11 +227,11 @@ use type checking/interface checking macros or the
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> instance that implements AtkSelectionIface</td>
+<td>a <span class="type">GObject</span> instance that implements AtkSelectionIface</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> specifying the child index.</td>
+<td>a <span class="type">gint</span> specifying the child index.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -244,8 +244,8 @@ if <em class="parameter"><code>selection</code></em> does not implement this int
 <hr>
 <div class="refsect2">
 <a name="atk-selection-remove-selection"></a><h3>atk_selection_remove_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_selection_remove_selection      (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_selection_remove_selection      (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);</pre>
 <p>
 Removes the specified child of the object from the object's selection.
 </p>
@@ -254,11 +254,11 @@ Removes the specified child of the object from the object's selection.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> instance that implements AtkSelectionIface</td>
+<td>a <span class="type">GObject</span> instance that implements AtkSelectionIface</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>i</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> specifying the index in the selection set.  (e.g. the
+<td>a <span class="type">gint</span> specifying the index in the selection set.  (e.g. the
 ith selection as opposed to the ith child).</td>
 </tr>
 <tr>
@@ -271,7 +271,7 @@ ith selection as opposed to the ith child).</td>
 <hr>
 <div class="refsect2">
 <a name="atk-selection-select-all-selection"></a><h3>atk_selection_select_all_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_selection_select_all_selection  (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_selection_select_all_selection  (<em class="parameter"><code><a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *selection</code></em>);</pre>
 <p>
 Causes every child of the object to be selected if the object
 supports multiple selections.
@@ -281,7 +281,7 @@ supports multiple selections.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> instance that implements AtkSelectionIface</td>
+<td>a <span class="type">GObject</span> instance that implements AtkSelectionIface</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -296,7 +296,7 @@ supports multiple selections.
 <div class="refsect2">
 <a name="AtkSelection-selection-changed"></a><h3>The <code class="literal">"selection-changed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkSelection.html" title="AtkSelection"><span class="type">AtkSelection</span></a> *atkselection,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)         : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>      user_data)         : <code class="literal">Run Last</code></pre>
 <p>
 The "selection-changed" signal is emitted by an object which implements
 AtkSelection interface when the selection changes.
@@ -325,6 +325,6 @@ AtkSelection interface when the selection changes.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

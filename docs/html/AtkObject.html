@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkNoOpObjectFactory.html" title="AtkNoOpObjectFactory">
 <link rel="next" href="AtkObjectFactory.html" title="AtkObjectFactory">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -47,62 +47,62 @@
 <a name="AtkObject.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">struct              <a class="link" href="AtkObject.html#AtkObject-struct" title="struct AtkObject">AtkObject</a>;
 enum                <a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole">AtkRole</a>;
-<a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             <a class="link" href="AtkObject.html#atk-role-register" title="atk_role_register ()">atk_role_register</a>                   (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);
+<a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             <a class="link" href="AtkObject.html#atk-role-register" title="atk_role_register ()">atk_role_register</a>                   (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
 enum                <a class="link" href="AtkObject.html#AtkLayer" title="enum AtkLayer">AtkLayer</a>;
                     <a class="link" href="AtkObject.html#AtkImplementor" title="AtkImplementor">AtkImplementor</a>;
                     <a class="link" href="AtkObject.html#AtkPropertyValues" title="AtkPropertyValues">AtkPropertyValues</a>;
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (<a class="link" href="AtkObject.html#AtkFunction" title="AtkFunction ()">*AtkFunction</a>)                      (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<span class="returnvalue">gboolean</span>            (<a class="link" href="AtkObject.html#AtkFunction" title="AtkFunction ()">*AtkFunction</a>)                      (<em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
 <span class="returnvalue">void</span>                (<a class="link" href="AtkObject.html#AtkPropertyChangeHandler" title="AtkPropertyChangeHandler ()">*AtkPropertyChangeHandler</a>)         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *obj</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html#AtkPropertyValues" title="AtkPropertyValues"><span class="type">AtkPropertyValues</span></a> *vals</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkObject.html#atk-implementor-ref-accessible" title="atk_implementor_ref_accessible ()">atk_implementor_ref_accessible</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkImplementor" title="AtkImplementor"><span class="type">AtkImplementor</span></a> *implementor</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkObject.html#atk-object-get-name" title="atk_object_get_name ()">atk_object_get_name</a>                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkObject.html#atk-object-get-description" title="atk_object_get_description ()">atk_object_get_description</a>          (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkObject.html#atk-object-get-name" title="atk_object_get_name ()">atk_object_get_name</a>                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkObject.html#atk-object-get-description" title="atk_object_get_description ()">atk_object_get_description</a>          (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkObject.html#atk-object-get-parent" title="atk_object_get_parent ()">atk_object_get_parent</a>               (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkObject.html#atk-object-get-n-accessible-children" title="atk_object_get_n_accessible_children ()">atk_object_get_n_accessible_children</a>
+<span class="returnvalue">gint</span>                <a class="link" href="AtkObject.html#atk-object-get-n-accessible-children" title="atk_object_get_n_accessible_children ()">atk_object_get_n_accessible_children</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkObject.html#atk-object-ref-accessible-child" title="atk_object_ref_accessible_child ()">atk_object_ref_accessible_child</a>     (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);
 <a class="link" href="AtkRelationSet.html" title="AtkRelationSet"><span class="returnvalue">AtkRelationSet</span></a> *    <a class="link" href="AtkObject.html#atk-object-ref-relation-set" title="atk_object_ref_relation_set ()">atk_object_ref_relation_set</a>         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <a class="link" href="AtkObject.html#AtkLayer" title="enum AtkLayer"><span class="returnvalue">AtkLayer</span></a>            <a class="link" href="AtkObject.html#atk-object-get-layer" title="atk_object_get_layer ()">atk_object_get_layer</a>                (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkObject.html#atk-object-get-mdi-zorder" title="atk_object_get_mdi_zorder ()">atk_object_get_mdi_zorder</a>           (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkObject.html#atk-object-get-mdi-zorder" title="atk_object_get_mdi_zorder ()">atk_object_get_mdi_zorder</a>           (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             <a class="link" href="AtkObject.html#atk-object-get-role" title="atk_object_get_role ()">atk_object_get_role</a>                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <a class="link" href="AtkStateSet.html" title="AtkStateSet"><span class="returnvalue">AtkStateSet</span></a> *       <a class="link" href="AtkObject.html#atk-object-ref-state-set" title="atk_object_ref_state_set ()">atk_object_ref_state_set</a>            (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkObject.html#atk-object-get-index-in-parent" title="atk_object_get_index_in_parent ()">atk_object_get_index_in_parent</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkObject.html#atk-object-get-index-in-parent" title="atk_object_get_index_in_parent ()">atk_object_get_index_in_parent</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObject.html#atk-object-set-name" title="atk_object_set_name ()">atk_object_set_name</a>                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObject.html#atk-object-set-description" title="atk_object_set_description ()">atk_object_set_description</a>          (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObject.html#atk-object-set-parent" title="atk_object_set_parent ()">atk_object_set_parent</a>               (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *parent</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObject.html#atk-object-set-role" title="atk_object_set_role ()">atk_object_set_role</a>                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               <a class="link" href="AtkObject.html#atk-object-connect-property-change-handler" title="atk_object_connect_property_change_handler ()">atk_object_connect_property_change_handler</a>
+<span class="returnvalue">guint</span>               <a class="link" href="AtkObject.html#atk-object-connect-property-change-handler" title="atk_object_connect_property_change_handler ()">atk_object_connect_property_change_handler</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html#AtkPropertyChangeHandler" title="AtkPropertyChangeHandler ()"><span class="type">AtkPropertyChangeHandler</span></a> *handler</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObject.html#atk-object-remove-property-change-handler" title="atk_object_remove_property_change_handler ()">atk_object_remove_property_change_handler</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> handler_id</code></em>);
+                                                         <em class="parameter"><code><span class="type">guint</span> handler_id</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObject.html#atk-object-notify-state-change" title="atk_object_notify_state_change ()">atk_object_notify_state_change</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code><a class="link" href="atk-AtkState.html#AtkState" title="AtkState"><span class="type">AtkState</span></a> state</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value</code></em>);
+                                                         <em class="parameter"><code><span class="type">gboolean</span> value</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObject.html#atk-object-initialize" title="atk_object_initialize ()">atk_object_initialize</a>               (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkObject.html#atk-object-add-relationship" title="atk_object_add_relationship ()">atk_object_add_relationship</a>         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkObject.html#atk-object-add-relationship" title="atk_object_add_relationship ()">atk_object_add_relationship</a>         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="type">AtkRelationType</span></a> relationship</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *target</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkObject.html#atk-object-remove-relationship" title="atk_object_remove_relationship ()">atk_object_remove_relationship</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkObject.html#atk-object-remove-relationship" title="atk_object_remove_relationship ()">atk_object_remove_relationship</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="type">AtkRelationType</span></a> relationship</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *target</code></em>);
 <a class="link" href="AtkText.html#AtkAttributeSet" title="AtkAttributeSet"><span class="returnvalue">AtkAttributeSet</span></a> *   <a class="link" href="AtkObject.html#atk-object-get-attributes" title="atk_object_get_attributes ()">atk_object_get_attributes</a>           (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkObject.html#atk-role-get-name" title="atk_role_get_name ()">atk_role_get_name</a>                   (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkObject.html#atk-role-get-localized-name" title="atk_role_get_localized_name ()">atk_role_get_localized_name</a>         (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);
-<a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             <a class="link" href="AtkObject.html#atk-role-for-name" title="atk_role_for_name ()">atk_role_for_name</a>                   (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkObject.html#atk-role-get-name" title="atk_role_get_name ()">atk_role_get_name</a>                   (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkObject.html#atk-role-get-localized-name" title="atk_role_get_localized_name ()">atk_role_get_localized_name</a>         (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);
+<a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             <a class="link" href="AtkObject.html#atk-role-for-name" title="atk_role_for_name ()">atk_role_for_name</a>                   (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="AtkObject.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  GObject
    +----AtkObject
          +----<a class="link" href="AtkGObjectAccessible.html" title="AtkGObjectAccessible">AtkGObjectAccessible</a>
          +----<a class="link" href="AtkNoOpObject.html" title="AtkNoOpObject">AtkNoOpObject</a>
@@ -117,32 +117,32 @@ AtkObject is required by
 <div class="refsect1">
 <a name="AtkObject.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-component-layer" title='The "accessible-component-layer" property'>accessible-component-layer</a>" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-component-mdi-zorder" title='The "accessible-component-mdi-zorder" property'>accessible-component-mdi-zorder</a>" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-description" title='The "accessible-description" property'>accessible-description</a>"   <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-hypertext-nlinks" title='The "accessible-hypertext-nlinks" property'>accessible-hypertext-nlinks</a>" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-name" title='The "accessible-name" property'>accessible-name</a>"          <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-component-layer" title='The "accessible-component-layer" property'>accessible-component-layer</a>" <span class="type">gint</span>                  : Read
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-component-mdi-zorder" title='The "accessible-component-mdi-zorder" property'>accessible-component-mdi-zorder</a>" <span class="type">gint</span>                  : Read
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-description" title='The "accessible-description" property'>accessible-description</a>"   <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-hypertext-nlinks" title='The "accessible-hypertext-nlinks" property'>accessible-hypertext-nlinks</a>" <span class="type">gint</span>                  : Read
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-name" title='The "accessible-name" property'>accessible-name</a>"          <span class="type">gchar</span>*                : Read / Write
   "<a class="link" href="AtkObject.html#AtkObject--accessible-parent" title='The "accessible-parent" property'>accessible-parent</a>"        <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a>*            : Read / Write
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-role" title='The "accessible-role" property'>accessible-role</a>"          <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-table-caption" title='The "accessible-table-caption" property'>accessible-table-caption</a>" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-role" title='The "accessible-role" property'>accessible-role</a>"          <span class="type">gint</span>                  : Read / Write
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-table-caption" title='The "accessible-table-caption" property'>accessible-table-caption</a>" <span class="type">gchar</span>*                : Read / Write
   "<a class="link" href="AtkObject.html#AtkObject--accessible-table-caption-object" title='The "accessible-table-caption-object" property'>accessible-table-caption-object</a>" <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a>*            : Read / Write
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-table-column-description" title='The "accessible-table-column-description" property'>accessible-table-column-description</a>" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-table-column-description" title='The "accessible-table-column-description" property'>accessible-table-column-description</a>" <span class="type">gchar</span>*                : Read / Write
   "<a class="link" href="AtkObject.html#AtkObject--accessible-table-column-header" title='The "accessible-table-column-header" property'>accessible-table-column-header</a>" <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a>*            : Read / Write
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-table-row-description" title='The "accessible-table-row-description" property'>accessible-table-row-description</a>" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-table-row-description" title='The "accessible-table-row-description" property'>accessible-table-row-description</a>" <span class="type">gchar</span>*                : Read / Write
   "<a class="link" href="AtkObject.html#AtkObject--accessible-table-row-header" title='The "accessible-table-row-header" property'>accessible-table-row-header</a>" <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a>*            : Read / Write
   "<a class="link" href="AtkObject.html#AtkObject--accessible-table-summary" title='The "accessible-table-summary" property'>accessible-table-summary</a>" <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a>*            : Read / Write
-  "<a class="link" href="AtkObject.html#AtkObject--accessible-value" title='The "accessible-value" property'>accessible-value</a>"         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>               : Read / Write
+  "<a class="link" href="AtkObject.html#AtkObject--accessible-value" title='The "accessible-value" property'>accessible-value</a>"         <span class="type">gdouble</span>               : Read / Write
 </pre>
 </div>
 <div class="refsect1">
 <a name="AtkObject.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="AtkObject.html#AtkObject-active-descendant-changed" title='The "active-descendant-changed" signal'>active-descendant-changed</a>"                      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS"><code class="literal">Has Details</code></a>
-  "<a class="link" href="AtkObject.html#AtkObject-children-changed" title='The "children-changed" signal'>children-changed</a>"                               : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS"><code class="literal">Has Details</code></a>
-  "<a class="link" href="AtkObject.html#AtkObject-focus-event" title='The "focus-event" signal'>focus-event</a>"                                    : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkObject.html#AtkObject-property-change" title='The "property-change" signal'>property-change</a>"                                : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS"><code class="literal">Has Details</code></a>
-  "<a class="link" href="AtkObject.html#AtkObject-state-change" title='The "state-change" signal'>state-change</a>"                                   : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS"><code class="literal">Has Details</code></a>
-  "<a class="link" href="AtkObject.html#AtkObject-visible-data-changed" title='The "visible-data-changed" signal'>visible-data-changed</a>"                           : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="AtkObject.html#AtkObject-active-descendant-changed" title='The "active-descendant-changed" signal'>active-descendant-changed</a>"                      : <code class="literal">Has Details</code>
+  "<a class="link" href="AtkObject.html#AtkObject-children-changed" title='The "children-changed" signal'>children-changed</a>"                               : <code class="literal">Has Details</code>
+  "<a class="link" href="AtkObject.html#AtkObject-focus-event" title='The "focus-event" signal'>focus-event</a>"                                    : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkObject.html#AtkObject-property-change" title='The "property-change" signal'>property-change</a>"                                : <code class="literal">Has Details</code>
+  "<a class="link" href="AtkObject.html#AtkObject-state-change" title='The "state-change" signal'>state-change</a>"                                   : <code class="literal">Has Details</code>
+  "<a class="link" href="AtkObject.html#AtkObject-visible-data-changed" title='The "visible-data-changed" signal'>visible-data-changed</a>"                           : <code class="literal">Run Last</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -160,7 +160,7 @@ which a given UI component plays in a user interface.
 <p>All UI components in an application which provide useful
 information or services to the user must provide corresponding
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> instances on request (in GTK+, for instance, usually
-on a call to #<a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-get-accessible"><code class="function">gtk_widget_get_accessible()</code></a>), either via ATK support
+on a call to #<code class="function">gtk_widget_get_accessible()</code>), either via ATK support
 built into the toolkit for the widget class or ancestor class, or in
 the case of custom widgets, if the inherited <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> implementation
 is insufficient, via instances of a new <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> subclass.
@@ -280,6 +280,7 @@ The AtkObject structure should not be accessed directly.
   ATK_ROLE_IMAGE_MAP,
   ATK_ROLE_NOTIFICATION,
   ATK_ROLE_INFO_BAR,
+  ATK_ROLE_LEVEL_BAR,
   ATK_ROLE_LAST_DEFINED
 } AtkRole;
 </pre>
@@ -809,6 +810,11 @@ in other words it is an "input method window." <em class="parameter"><code>Since
 </td>
 </tr>
 <tr>
+<td><p><a name="ATK-ROLE-LEVEL-BAR:CAPS"></a><span class="term"><code class="literal">ATK_ROLE_LEVEL_BAR</code></span></p></td>
+<td>A bar that serves as a level indicator to, for instance, show the strength of a password or the state of a battery.  <em class="parameter"><code>Since</code></em>: ATK-2.7.3
+</td>
+</tr>
+<tr>
 <td><p><a name="ATK-ROLE-LAST-DEFINED:CAPS"></a><span class="term"><code class="literal">ATK_ROLE_LAST_DEFINED</code></span></p></td>
 <td>not a valid role, used for finding end of the enumeration
 </td>
@@ -819,7 +825,7 @@ in other words it is an "input method window." <em class="parameter"><code>Since
 <hr>
 <div class="refsect2">
 <a name="atk-role-register"></a><h3>atk_role_register ()</h3>
-<pre class="programlisting"><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             atk_role_register                   (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             atk_role_register                   (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
 <p>
 Registers the role specified by <em class="parameter"><code>name</code></em>.
 </p>
@@ -949,15 +955,15 @@ corresponding to focused.
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td><p><span class="term">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AtkPropertyValues.property-name"></a>property_name</code></em>;</span></p></td>
+<td><p><span class="term">const <span class="type">gchar</span> *<em class="structfield"><code><a name="AtkPropertyValues.property-name"></a>property_name</code></em>;</span></p></td>
 <td>The name of the ATK property which is being presented or which has been changed.</td>
 </tr>
 <tr>
-<td><p><span class="term"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> <em class="structfield"><code><a name="AtkPropertyValues.old-value"></a>old_value</code></em>;</span></p></td>
+<td><p><span class="term"><span class="type">GValue</span> <em class="structfield"><code><a name="AtkPropertyValues.old-value"></a>old_value</code></em>;</span></p></td>
 <td>The old property value, NULL; in some contexts this value is undefined (see note below).</td>
 </tr>
 <tr>
-<td><p><span class="term"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> <em class="structfield"><code><a name="AtkPropertyValues.new-value"></a>new_value</code></em>;</span></p></td>
+<td><p><span class="term"><span class="type">GValue</span> <em class="structfield"><code><a name="AtkPropertyValues.new-value"></a>new_value</code></em>;</span></p></td>
 <td>The new value of the named property.</td>
 </tr>
 </tbody>
@@ -966,7 +972,7 @@ corresponding to focused.
 <hr>
 <div class="refsect2">
 <a name="AtkFunction"></a><h3>AtkFunction ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (*AtkFunction)                      (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            (*AtkFunction)                      (<em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
 <p>
 An AtkFunction is a function definition used for padding which has been added
 to class and interface structures to allow for expansion in the future.
@@ -1002,7 +1008,7 @@ the object implements <span class="type">AtkObjectIface</span>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>implementor</code></em> :</span></p></td>
-<td>The <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> instance which should implement <span class="type">AtkImplementorIface</span>
+<td>The <span class="type">GObject</span> instance which should implement <span class="type">AtkImplementorIface</span>
 if a non-null return value is required.</td>
 </tr>
 <tr>
@@ -1017,7 +1023,7 @@ implementation. <span class="annotation">[<a href="http://foldoc.org/transfer%20
 <hr>
 <div class="refsect2">
 <a name="atk-object-get-name"></a><h3>atk_object_get_name ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_object_get_name                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_object_get_name                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <p>
 Gets the accessible name of the accessible.
 </p>
@@ -1039,7 +1045,7 @@ Gets the accessible name of the accessible.
 <hr>
 <div class="refsect2">
 <a name="atk-object-get-description"></a><h3>atk_object_get_description ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_object_get_description          (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_object_get_description          (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <p>
 Gets the accessible description of the accessible.
 </p>
@@ -1086,7 +1092,7 @@ of the accessible. <span class="annotation">[<a href="http://foldoc.org/transfer
 <hr>
 <div class="refsect2">
 <a name="atk-object-get-n-accessible-children"></a><h3>atk_object_get_n_accessible_children ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_object_get_n_accessible_children
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_object_get_n_accessible_children
                                                         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <p>
 Gets the number of accessible children of the accessible.
@@ -1111,7 +1117,7 @@ of the accessible.</td>
 <div class="refsect2">
 <a name="atk-object-ref-accessible-child"></a><h3>atk_object_ref_accessible_child ()</h3>
 <pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_object_ref_accessible_child     (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> i</code></em>);</pre>
 <p>
 Gets a reference to the specified accessible child of the object.
 The accessible children are 0-based so the first accessible child is
@@ -1191,7 +1197,7 @@ Gets the layer of the accessible.
 <hr>
 <div class="refsect2">
 <a name="atk-object-get-mdi-zorder"></a><h3>atk_object_get_mdi_zorder ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_object_get_mdi_zorder           (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_object_get_mdi_zorder           (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Warning</h3>
 <p><code class="literal">atk_object_get_mdi_zorder</code> is deprecated and should not be used in newly-written code. Use atk_component_get_mdi_zorder instead.</p>
@@ -1267,7 +1273,7 @@ set of the accessible. <span class="annotation">[<a href="http://foldoc.org/tran
 <hr>
 <div class="refsect2">
 <a name="atk-object-get-index-in-parent"></a><h3>atk_object_get_index_in_parent ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_object_get_index_in_parent      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_object_get_index_in_parent      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <p>
 Gets the 0-based index of this accessible in its parent; returns -1 if the
 accessible does not have an accessible parent.
@@ -1291,7 +1297,7 @@ accessible does not have an accessible parent.
 <div class="refsect2">
 <a name="atk-object-set-name"></a><h3>atk_object_set_name ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_object_set_name                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
 <p>
 Sets the accessible name of the accessible. You can't set the name
 to NULL. This is reserved for the initial value. In this aspect
@@ -1317,7 +1323,7 @@ a empty value you can use "".
 <div class="refsect2">
 <a name="atk-object-set-description"></a><h3>atk_object_set_description ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_object_set_description          (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);</pre>
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>);</pre>
 <p>
 Sets the accessible description of the accessible. You can't set
 the description to NULL. This is reserved for the initial value. In
@@ -1388,7 +1394,7 @@ Sets the role of the accessible.
 <hr>
 <div class="refsect2">
 <a name="atk-object-connect-property-change-handler"></a><h3>atk_object_connect_property_change_handler ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               atk_object_connect_property_change_handler
+<pre class="programlisting"><span class="returnvalue">guint</span>               atk_object_connect_property_change_handler
                                                         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html#AtkPropertyChangeHandler" title="AtkPropertyChangeHandler ()"><span class="type">AtkPropertyChangeHandler</span></a> *handler</code></em>);</pre>
 <p>
@@ -1408,7 +1414,7 @@ Specifies a function to be called when a property changes value.
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> which is the handler id used in
+<td>a <span class="type">guint</span> which is the handler id used in
 <a class="link" href="AtkObject.html#atk-object-remove-property-change-handler" title="atk_object_remove_property_change_handler ()"><code class="function">atk_object_remove_property_change_handler()</code></a>
 </td>
 </tr>
@@ -1420,7 +1426,7 @@ Specifies a function to be called when a property changes value.
 <a name="atk-object-remove-property-change-handler"></a><h3>atk_object_remove_property_change_handler ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_object_remove_property_change_handler
                                                         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> handler_id</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">guint</span> handler_id</code></em>);</pre>
 <p>
 Removes a property change handler.
 </p>
@@ -1444,7 +1450,7 @@ Removes a property change handler.
 <a name="atk-object-notify-state-change"></a><h3>atk_object_notify_state_change ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_object_notify_state_change      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code><a class="link" href="atk-AtkState.html#AtkState" title="AtkState"><span class="type">AtkState</span></a> state</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gboolean</span> value</code></em>);</pre>
 <p>
 Emits a state-change signal for the specified state.
 </p>
@@ -1471,7 +1477,7 @@ Emits a state-change signal for the specified state.
 <div class="refsect2">
 <a name="atk-object-initialize"></a><h3>atk_object_initialize ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_object_initialize               (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);</pre>
 <p>
 This function is called when implementing subclasses of <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a>.
 It does initialization required for the new object. It is intended
@@ -1488,7 +1494,7 @@ to create an instance of a subclass of <a class="link" href="AtkObject.html" tit
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> which identifies the object for which the AtkObject was created.</td>
+<td>a <span class="type">gpointer</span> which identifies the object for which the AtkObject was created.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1496,7 +1502,7 @@ to create an instance of a subclass of <a class="link" href="AtkObject.html" tit
 <hr>
 <div class="refsect2">
 <a name="atk-object-add-relationship"></a><h3>atk_object_add_relationship ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_object_add_relationship         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_object_add_relationship         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="type">AtkRelationType</span></a> relationship</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *target</code></em>);</pre>
 <p>
@@ -1527,7 +1533,7 @@ Adds a relationship of the specified type with the specified target.
 <hr>
 <div class="refsect2">
 <a name="atk-object-remove-relationship"></a><h3>atk_object_remove_relationship ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_object_remove_relationship      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_object_remove_relationship      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="type">AtkRelationType</span></a> relationship</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *target</code></em>);</pre>
 <p>
@@ -1586,7 +1592,7 @@ has no name-value pair attributes assigned to it. <span class="annotation">[<a h
 <hr>
 <div class="refsect2">
 <a name="atk-role-get-name"></a><h3>atk_role_get_name ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_role_get_name                   (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);</pre>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_role_get_name                   (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);</pre>
 <p>
 Gets the description string describing the <a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> <em class="parameter"><code>role</code></em>.
 </p>
@@ -1607,7 +1613,7 @@ Gets the description string describing the <a class="link" href="AtkObject.html#
 <hr>
 <div class="refsect2">
 <a name="atk-role-get-localized-name"></a><h3>atk_role_get_localized_name ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_role_get_localized_name         (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);</pre>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_role_get_localized_name         (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);</pre>
 <p>
 Gets the localized description string describing the <a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> <em class="parameter"><code>role</code></em>.
 </p>
@@ -1628,7 +1634,7 @@ Gets the localized description string describing the <a class="link" href="AtkOb
 <hr>
 <div class="refsect2">
 <a name="atk-role-for-name"></a><h3>atk_role_for_name ()</h3>
-<pre class="programlisting"><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             atk_role_for_name                   (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             atk_role_for_name                   (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
 <p>
 Get the <a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> type corresponding to a rolew name.
 </p>
@@ -1653,7 +1659,7 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <a name="AtkObject.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="AtkObject--accessible-component-layer"></a><h3>The <code class="literal">"accessible-component-layer"</code> property</h3>
-<pre class="programlisting">  "accessible-component-layer" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read</pre>
+<pre class="programlisting">  "accessible-component-layer" <span class="type">gint</span>                  : Read</pre>
 <p>The accessible layer of this object.</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
@@ -1661,21 +1667,21 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-component-mdi-zorder"></a><h3>The <code class="literal">"accessible-component-mdi-zorder"</code> property</h3>
-<pre class="programlisting">  "accessible-component-mdi-zorder" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read</pre>
+<pre class="programlisting">  "accessible-component-mdi-zorder" <span class="type">gint</span>                  : Read</pre>
 <p>The accessible MDI value of this object.</p>
 <p>Default value: -2147483648</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-description"></a><h3>The <code class="literal">"accessible-description"</code> property</h3>
-<pre class="programlisting">  "accessible-description"   <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "accessible-description"   <span class="type">gchar</span>*                : Read / Write</pre>
 <p>Description of an object, formatted for assistive technology access.</p>
 <p>Default value: NULL</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-hypertext-nlinks"></a><h3>The <code class="literal">"accessible-hypertext-nlinks"</code> property</h3>
-<pre class="programlisting">  "accessible-hypertext-nlinks" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read</pre>
+<pre class="programlisting">  "accessible-hypertext-nlinks" <span class="type">gint</span>                  : Read</pre>
 <p>The number of links which the current AtkHypertext has.</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
@@ -1683,7 +1689,7 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-name"></a><h3>The <code class="literal">"accessible-name"</code> property</h3>
-<pre class="programlisting">  "accessible-name"          <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "accessible-name"          <span class="type">gchar</span>*                : Read / Write</pre>
 <p>Object instance's name formatted for assistive technology access.</p>
 <p>Default value: NULL</p>
 </div>
@@ -1696,7 +1702,7 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-role"></a><h3>The <code class="literal">"accessible-role"</code> property</h3>
-<pre class="programlisting">  "accessible-role"          <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write</pre>
+<pre class="programlisting">  "accessible-role"          <span class="type">gint</span>                  : Read / Write</pre>
 <p>The accessible role of this object.</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 66</p>
@@ -1704,7 +1710,7 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-table-caption"></a><h3>The <code class="literal">"accessible-table-caption"</code> property</h3>
-<pre class="programlisting">  "accessible-table-caption" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "accessible-table-caption" <span class="type">gchar</span>*                : Read / Write</pre>
 <p>Is used to notify that the table caption has changed; this property should not be used. accessible-table-caption-object should be used instead.</p>
 <p>Default value: NULL</p>
 </div>
@@ -1717,7 +1723,7 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-table-column-description"></a><h3>The <code class="literal">"accessible-table-column-description"</code> property</h3>
-<pre class="programlisting">  "accessible-table-column-description" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "accessible-table-column-description" <span class="type">gchar</span>*                : Read / Write</pre>
 <p>Is used to notify that the table column description has changed.</p>
 <p>Default value: NULL</p>
 </div>
@@ -1730,7 +1736,7 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-table-row-description"></a><h3>The <code class="literal">"accessible-table-row-description"</code> property</h3>
-<pre class="programlisting">  "accessible-table-row-description" <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "accessible-table-row-description" <span class="type">gchar</span>*                : Read / Write</pre>
 <p>Is used to notify that the table row description has changed.</p>
 <p>Default value: NULL</p>
 </div>
@@ -1749,7 +1755,7 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <hr>
 <div class="refsect2">
 <a name="AtkObject--accessible-value"></a><h3>The <code class="literal">"accessible-value"</code> property</h3>
-<pre class="programlisting">  "accessible-value"         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>               : Read / Write</pre>
+<pre class="programlisting">  "accessible-value"         <span class="type">gdouble</span>               : Read / Write</pre>
 <p>Is used to notify that the value has changed.</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
@@ -1760,8 +1766,8 @@ or <a class="link" href="AtkObject.html#ATK-ROLE-INVALID:CAPS"><span class="type
 <div class="refsect2">
 <a name="AtkObject-active-descendant-changed"></a><h3>The <code class="literal">"active-descendant-changed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *atkobject,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS"><code class="literal">Has Details</code></a></pre>
+                                                        <span class="type">gpointer</span>   arg1,
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Has Details</code></pre>
 <p>
 The "active-descendant-changed" signal is emitted by an object which has
 the state ATK_STATE_MANAGES_DESCENDANTS when the focus object in the
@@ -1790,9 +1796,9 @@ in the table which has focus changes.
 <div class="refsect2">
 <a name="AtkObject-children-changed"></a><h3>The <code class="literal">"children-changed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *atkobject,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>      arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   arg2,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS"><code class="literal">Has Details</code></a></pre>
+                                                        <span class="type">guint</span>      arg1,
+                                                        <span class="type">gpointer</span>   arg2,
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Has Details</code></pre>
 <p>
 The signal "children-changed" is emitted when a child is added or
 removed form an object. It supports two details: "add" and "remove"
@@ -1823,8 +1829,8 @@ removed form an object. It supports two details: "add" and "remove"
 <div class="refsect2">
 <a name="AtkObject-focus-event"></a><h3>The <code class="literal">"focus-event"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *atkobject,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>   arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gboolean</span>   arg1,
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal "focus-event" is emitted when an object gains or loses focus.
 </p>
@@ -1850,8 +1856,8 @@ The signal "focus-event" is emitted when an object gains or loses focus.
 <div class="refsect2">
 <a name="AtkObject-property-change"></a><h3>The <code class="literal">"property-change"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *atkobject,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS"><code class="literal">Has Details</code></a></pre>
+                                                        <span class="type">gpointer</span>   arg1,
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Has Details</code></pre>
 <p>
 The signal "property-change" is emitted when an object's property
 value changes. The detail identifies the name of the property whose
@@ -1879,9 +1885,9 @@ value has changed.
 <div class="refsect2">
 <a name="AtkObject-state-change"></a><h3>The <code class="literal">"state-change"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *atkobject,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>     *arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>   arg2,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS"><code class="literal">Has Details</code></a></pre>
+                                                        <span class="type">gchar</span>     *arg1,
+                                                        <span class="type">gboolean</span>   arg2,
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Has Details</code></pre>
 <p>
 The "state-change" signal is emitted  when an object's state changes.
 The detail value identifies the state type which has changed.
@@ -1912,7 +1918,7 @@ The detail value identifies the state type which has changed.
 <div class="refsect2">
 <a name="AtkObject-visible-data-changed"></a><h3>The <code class="literal">"visible-data-changed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *atkobject,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The "visible-data-changed" signal is emitted when the visual appearance of
 the object changed.
@@ -1936,12 +1942,12 @@ the object changed.
 <a name="AtkObject.see-also"></a><h2>See Also</h2>
 <p>
 See also: <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a>, <a class="link" href="AtkRegistry.html" title="AtkRegistry"><span class="type">AtkRegistry</span></a>.
-( GTK+ users see also <a href="http://developer.gnome.org/gtk2/GtkAccessible.html"><span class="type">GtkAccessible</span></a>).
+( GTK+ users see also <span class="type">GtkAccessible</span>).
 </p>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

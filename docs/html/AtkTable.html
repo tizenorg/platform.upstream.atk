@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkStreamableContent.html" title="AtkStreamableContent">
 <link rel="next" href="AtkText.html" title="AtkText">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -46,68 +46,68 @@ row/column information.</p>
 <a name="AtkTable.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="AtkTable.html#AtkTable-struct" title="AtkTable">AtkTable</a>;
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkTable.html#atk-table-ref-at" title="atk_table_ref_at ()">atk_table_ref_at</a>                    (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-index-at" title="atk_table_get_index_at ()">atk_table_get_index_at</a>              (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-column-at-index" title="atk_table_get_column_at_index ()">atk_table_get_column_at_index</a>       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-row-at-index" title="atk_table_get_row_at_index ()">atk_table_get_row_at_index</a>          (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-n-columns" title="atk_table_get_n_columns ()">atk_table_get_n_columns</a>             (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-n-rows" title="atk_table_get_n_rows ()">atk_table_get_n_rows</a>                (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-column-extent-at" title="atk_table_get_column_extent_at ()">atk_table_get_column_extent_at</a>      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-row-extent-at" title="atk_table_get_row_extent_at ()">atk_table_get_row_extent_at</a>         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-index-at" title="atk_table_get_index_at ()">atk_table_get_index_at</a>              (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-column-at-index" title="atk_table_get_column_at_index ()">atk_table_get_column_at_index</a>       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> index_</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-row-at-index" title="atk_table_get_row_at_index ()">atk_table_get_row_at_index</a>          (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> index_</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-n-columns" title="atk_table_get_n_columns ()">atk_table_get_n_columns</a>             (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-n-rows" title="atk_table_get_n_rows ()">atk_table_get_n_rows</a>                (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-column-extent-at" title="atk_table_get_column_extent_at ()">atk_table_get_column_extent_at</a>      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-row-extent-at" title="atk_table_get_row_extent_at ()">atk_table_get_row_extent_at</a>         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkTable.html#atk-table-get-caption" title="atk_table_get_caption ()">atk_table_get_caption</a>               (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkTable.html#atk-table-get-column-description" title="atk_table_get_column_description ()">atk_table_get_column_description</a>    (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="AtkTable.html#atk-table-get-row-description" title="atk_table_get_row_description ()">atk_table_get_row_description</a>       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkTable.html#atk-table-get-column-description" title="atk_table_get_column_description ()">atk_table_get_column_description</a>    (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkTable.html#atk-table-get-row-description" title="atk_table_get_row_description ()">atk_table_get_row_description</a>       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkTable.html#atk-table-get-column-header" title="atk_table_get_column_header ()">atk_table_get_column_header</a>         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkTable.html#atk-table-get-row-header" title="atk_table_get_row_header ()">atk_table_get_row_header</a>            (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkTable.html#atk-table-get-summary" title="atk_table_get_summary ()">atk_table_get_summary</a>               (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkTable.html#atk-table-set-caption" title="atk_table_set_caption ()">atk_table_set_caption</a>               (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *caption</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkTable.html#atk-table-set-row-description" title="atk_table_set_row_description ()">atk_table_set_row_description</a>       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkTable.html#atk-table-set-column-description" title="atk_table_set_column_description ()">atk_table_set_column_description</a>    (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkTable.html#atk-table-set-row-header" title="atk_table_set_row_header ()">atk_table_set_row_header</a>            (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *header</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkTable.html#atk-table-set-column-header" title="atk_table_set_column_header ()">atk_table_set_column_header</a>         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *header</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkTable.html#atk-table-set-summary" title="atk_table_set_summary ()">atk_table_set_summary</a>               (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-selected-columns" title="atk_table_get_selected_columns ()">atk_table_get_selected_columns</a>      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> **selected</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkTable.html#atk-table-get-selected-rows" title="atk_table_get_selected_rows ()">atk_table_get_selected_rows</a>         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> **selected</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkTable.html#atk-table-is-column-selected" title="atk_table_is_column_selected ()">atk_table_is_column_selected</a>        (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkTable.html#atk-table-is-row-selected" title="atk_table_is_row_selected ()">atk_table_is_row_selected</a>           (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkTable.html#atk-table-is-selected" title="atk_table_is_selected ()">atk_table_is_selected</a>               (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkTable.html#atk-table-add-column-selection" title="atk_table_add_column_selection ()">atk_table_add_column_selection</a>      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkTable.html#atk-table-add-row-selection" title="atk_table_add_row_selection ()">atk_table_add_row_selection</a>         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkTable.html#atk-table-remove-column-selection" title="atk_table_remove_column_selection ()">atk_table_remove_column_selection</a>   (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="AtkTable.html#atk-table-remove-row-selection" title="atk_table_remove_row_selection ()">atk_table_remove_row_selection</a>      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-selected-columns" title="atk_table_get_selected_columns ()">atk_table_get_selected_columns</a>      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> **selected</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkTable.html#atk-table-get-selected-rows" title="atk_table_get_selected_rows ()">atk_table_get_selected_rows</a>         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> **selected</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkTable.html#atk-table-is-column-selected" title="atk_table_is_column_selected ()">atk_table_is_column_selected</a>        (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkTable.html#atk-table-is-row-selected" title="atk_table_is_row_selected ()">atk_table_is_row_selected</a>           (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkTable.html#atk-table-is-selected" title="atk_table_is_selected ()">atk_table_is_selected</a>               (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkTable.html#atk-table-add-column-selection" title="atk_table_add_column_selection ()">atk_table_add_column_selection</a>      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkTable.html#atk-table-add-row-selection" title="atk_table_add_row_selection ()">atk_table_add_row_selection</a>         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkTable.html#atk-table-remove-column-selection" title="atk_table_remove_column_selection ()">atk_table_remove_column_selection</a>   (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="AtkTable.html#atk-table-remove-row-selection" title="atk_table_remove_row_selection ()">atk_table_remove_row_selection</a>      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -126,13 +126,13 @@ AtkTable is implemented by
 <div class="refsect1">
 <a name="AtkTable.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="AtkTable.html#AtkTable-column-deleted" title='The "column-deleted" signal'>column-deleted</a>"                                 : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkTable.html#AtkTable-column-inserted" title='The "column-inserted" signal'>column-inserted</a>"                                : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkTable.html#AtkTable-column-reordered" title='The "column-reordered" signal'>column-reordered</a>"                               : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkTable.html#AtkTable-model-changed" title='The "model-changed" signal'>model-changed</a>"                                  : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkTable.html#AtkTable-row-deleted" title='The "row-deleted" signal'>row-deleted</a>"                                    : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkTable.html#AtkTable-row-inserted" title='The "row-inserted" signal'>row-inserted</a>"                                   : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkTable.html#AtkTable-row-reordered" title='The "row-reordered" signal'>row-reordered</a>"                                  : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="AtkTable.html#AtkTable-column-deleted" title='The "column-deleted" signal'>column-deleted</a>"                                 : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkTable.html#AtkTable-column-inserted" title='The "column-inserted" signal'>column-inserted</a>"                                : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkTable.html#AtkTable-column-reordered" title='The "column-reordered" signal'>column-reordered</a>"                               : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkTable.html#AtkTable-model-changed" title='The "model-changed" signal'>model-changed</a>"                                  : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkTable.html#AtkTable-row-deleted" title='The "row-deleted" signal'>row-deleted</a>"                                    : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkTable.html#AtkTable-row-inserted" title='The "row-inserted" signal'>row-inserted</a>"                                   : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkTable.html#AtkTable-row-reordered" title='The "row-reordered" signal'>row-reordered</a>"                                  : <code class="literal">Run Last</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -172,8 +172,8 @@ The AtkTable structure does not contain any fields.
 <div class="refsect2">
 <a name="atk-table-ref-at"></a><h3>atk_table_ref_at ()</h3>
 <pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_table_ref_at                    (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Get a reference to the table cell at <em class="parameter"><code>row</code></em>, <em class="parameter"><code>column</code></em>.
 </p>
@@ -186,12 +186,12 @@ Get a reference to the table cell at <em class="parameter"><code>row</code></em>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -206,11 +206,11 @@ accessible. <span class="annotation">[<a href="http://foldoc.org/transfer%20full
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-index-at"></a><h3>atk_table_get_index_at ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_index_at              (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_index_at              (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
-Gets a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing the index at the specified <em class="parameter"><code>row</code></em> and <em class="parameter"><code>column</code></em>.
+Gets a <span class="type">gint</span> representing the index at the specified <em class="parameter"><code>row</code></em> and <em class="parameter"><code>column</code></em>.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -221,17 +221,17 @@ Gets a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.ht
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing the index at specified position.
+<td>a <span class="type">gint</span> representing the index at specified position.
 The value -1 is returned if the object at row,column is not a child
 of table or table does not implement this interface.</td>
 </tr>
@@ -241,10 +241,10 @@ of table or table does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-column-at-index"></a><h3>atk_table_get_column_at_index ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_column_at_index       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_column_at_index       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> index_</code></em>);</pre>
 <p>
-Gets a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing the column at the specified <em class="parameter"><code>index_</code></em>.
+Gets a <span class="type">gint</span> representing the column at the specified <em class="parameter"><code>index_</code></em>.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -255,7 +255,7 @@ Gets a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.ht
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>index_</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing an index in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing an index in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -269,10 +269,10 @@ or -1 if the table does not implement this interface</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-row-at-index"></a><h3>atk_table_get_row_at_index ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_row_at_index          (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_row_at_index          (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> index_</code></em>);</pre>
 <p>
-Gets a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing the row at the specified <em class="parameter"><code>index_</code></em>.
+Gets a <span class="type">gint</span> representing the row at the specified <em class="parameter"><code>index_</code></em>.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -283,7 +283,7 @@ Gets a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.ht
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>index_</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing an index in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing an index in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -297,7 +297,7 @@ or -1 if the table does not implement this interface</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-n-columns"></a><h3>atk_table_get_n_columns ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_n_columns             (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_n_columns             (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);</pre>
 <p>
 Gets the number of columns in the table.
 </p>
@@ -319,7 +319,7 @@ if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-n-rows"></a><h3>atk_table_get_n_rows ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_n_rows                (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_n_rows                (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>);</pre>
 <p>
 Gets the number of rows in the table.
 </p>
@@ -341,9 +341,9 @@ if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-column-extent-at"></a><h3>atk_table_get_column_extent_at ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_column_extent_at      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_column_extent_at      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Gets the number of columns occupied by the accessible object
 at the specified <em class="parameter"><code>row</code></em> and <em class="parameter"><code>column</code></em> in the <em class="parameter"><code>table</code></em>.
@@ -357,12 +357,12 @@ at the specified <em class="parameter"><code>row</code></em> and <em class="para
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -376,9 +376,9 @@ if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-row-extent-at"></a><h3>atk_table_get_row_extent_at ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_row_extent_at         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_row_extent_at         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Gets the number of rows occupied by the accessible object
 at a specified <em class="parameter"><code>row</code></em> and <em class="parameter"><code>column</code></em> in the <em class="parameter"><code>table</code></em>.
@@ -392,12 +392,12 @@ at a specified <em class="parameter"><code>row</code></em> and <em class="parame
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ Gets the caption for the <em class="parameter"><code>table</code></em>.
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>a AtkObject* representing the table caption, or
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if value does not implement this interface. <span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span>
+<code class="literal">NULL</code> if value does not implement this interface. <span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span>
 </td>
 </tr>
 </tbody>
@@ -434,8 +434,8 @@ Gets the caption for the <em class="parameter"><code>table</code></em>.
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-column-description"></a><h3>atk_table_get_column_description ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_table_get_column_description    (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_table_get_column_description    (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Gets the description text of the specified <em class="parameter"><code>column</code></em> in the table
 </p>
@@ -448,12 +448,12 @@ Gets the description text of the specified <em class="parameter"><code>column</c
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a gchar* representing the column description, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+<td>a gchar* representing the column description, or <code class="literal">NULL</code>
 if value does not implement this interface.</td>
 </tr>
 </tbody>
@@ -462,8 +462,8 @@ if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-row-description"></a><h3>atk_table_get_row_description ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       atk_table_get_row_description       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_table_get_row_description       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);</pre>
 <p>
 Gets the description text of the specified row in the table
 </p>
@@ -476,12 +476,12 @@ Gets the description text of the specified row in the table
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a gchar* representing the row description, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+<td>a gchar* representing the row description, or <code class="literal">NULL</code>
 if value does not implement this interface.</td>
 </tr>
 </tbody>
@@ -491,7 +491,7 @@ if value does not implement this interface.</td>
 <div class="refsect2">
 <a name="atk-table-get-column-header"></a><h3>atk_table_get_column_header ()</h3>
 <pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_table_get_column_header         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Gets the column header of a specified column in an accessible table.
 </p>
@@ -504,12 +504,12 @@ Gets the column header of a specified column in an accessible table.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in the table</td>
+<td>a <span class="type">gint</span> representing a column in the table</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>a AtkObject* representing the specified column
-header, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if value does not implement this interface. <span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span>
+header, or <code class="literal">NULL</code> if value does not implement this interface. <span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span>
 </td>
 </tr>
 </tbody>
@@ -519,7 +519,7 @@ header, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-M
 <div class="refsect2">
 <a name="atk-table-get-row-header"></a><h3>atk_table_get_row_header ()</h3>
 <pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_table_get_row_header            (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);</pre>
 <p>
 Gets the row header of a specified row in an accessible table.
 </p>
@@ -532,12 +532,12 @@ Gets the row header of a specified row in an accessible table.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in the table</td>
+<td>a <span class="type">gint</span> representing a row in the table</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>a AtkObject* representing the specified row
-header, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if value does not implement this interface. <span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span>
+header, or <code class="literal">NULL</code> if value does not implement this interface. <span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span>
 </td>
 </tr>
 </tbody>
@@ -593,8 +593,8 @@ Sets the caption for the table.
 <div class="refsect2">
 <a name="atk-table-set-row-description"></a><h3>atk_table_set_row_description ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_table_set_row_description       (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>);</pre>
 <p>
 Sets the description text for the specified <em class="parameter"><code>row</code></em> of <em class="parameter"><code>table</code></em>.
 </p>
@@ -607,12 +607,12 @@ Sets the description text for the specified <em class="parameter"><code>row</cod
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>description</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> representing the description text
+<td>a <span class="type">gchar</span> representing the description text
 to set for the specified <em class="parameter"><code>row</code></em> of <em class="parameter"><code>table</code></em>
 </td>
 </tr>
@@ -623,8 +623,8 @@ to set for the specified <em class="parameter"><code>row</code></em> of <em clas
 <div class="refsect2">
 <a name="atk-table-set-column-description"></a><h3>atk_table_set_column_description ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_table_set_column_description    (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>);</pre>
 <p>
 Sets the description text for the specified <em class="parameter"><code>column</code></em> of the <em class="parameter"><code>table</code></em>.
 </p>
@@ -637,12 +637,12 @@ Sets the description text for the specified <em class="parameter"><code>column</
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>description</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> representing the description text
+<td>a <span class="type">gchar</span> representing the description text
 to set for the specified <em class="parameter"><code>column</code></em> of the <em class="parameter"><code>table</code></em>
 </td>
 </tr>
@@ -653,7 +653,7 @@ to set for the specified <em class="parameter"><code>column</code></em> of the <
 <div class="refsect2">
 <a name="atk-table-set-row-header"></a><h3>atk_table_set_row_header ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_table_set_row_header            (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *header</code></em>);</pre>
 <p>
 Sets the specified row header to <em class="parameter"><code>header</code></em>.
@@ -667,7 +667,7 @@ Sets the specified row header to <em class="parameter"><code>header</code></em>.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -682,7 +682,7 @@ Sets the specified row header to <em class="parameter"><code>header</code></em>.
 <div class="refsect2">
 <a name="atk-table-set-column-header"></a><h3>atk_table_set_column_header ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                atk_table_set_column_header         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *header</code></em>);</pre>
 <p>
 Sets the specified column header to <em class="parameter"><code>header</code></em>.
@@ -696,7 +696,7 @@ Sets the specified column header to <em class="parameter"><code>header</code></e
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -734,8 +734,8 @@ to set for <em class="parameter"><code>table</code></em>
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-selected-columns"></a><h3>atk_table_get_selected_columns ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_selected_columns      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> **selected</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_selected_columns      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> **selected</code></em>);</pre>
 <p>
 Gets the selected columns of the table by initializing **selected with 
 the selected column numbers. This array should be freed by the caller.
@@ -749,7 +749,7 @@ the selected column numbers. This array should be freed by the caller.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selected</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>** that is to contain the selected columns numbers</td>
+<td>a <span class="type">gint</span>** that is to contain the selected columns numbers</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -762,8 +762,8 @@ or <code class="literal">0</code> if value does not implement this interface.</t
 <hr>
 <div class="refsect2">
 <a name="atk-table-get-selected-rows"></a><h3>atk_table_get_selected_rows ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_table_get_selected_rows         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> **selected</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_table_get_selected_rows         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> **selected</code></em>);</pre>
 <p>
 Gets the selected rows of the table by initializing **selected with 
 the selected row numbers. This array should be freed by the caller.
@@ -777,7 +777,7 @@ the selected row numbers. This array should be freed by the caller.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>selected</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>** that is to contain the selected row numbers</td>
+<td>a <span class="type">gint</span>** that is to contain the selected row numbers</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -790,8 +790,8 @@ or zero if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-is-column-selected"></a><h3>atk_table_is_column_selected ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_table_is_column_selected        (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_table_is_column_selected        (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Gets a boolean value indicating whether the specified <em class="parameter"><code>column</code></em>
 is selected
@@ -805,7 +805,7 @@ is selected
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -819,8 +819,8 @@ if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-is-row-selected"></a><h3>atk_table_is_row_selected ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_table_is_row_selected           (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_table_is_row_selected           (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);</pre>
 <p>
 Gets a boolean value indicating whether the specified <em class="parameter"><code>row</code></em>
 is selected
@@ -834,7 +834,7 @@ is selected
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -848,9 +848,9 @@ if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-is-selected"></a><h3>atk_table_is_selected ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_table_is_selected               (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_table_is_selected               (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Gets a boolean value indicating whether the accessible object
 at the specified <em class="parameter"><code>row</code></em> and <em class="parameter"><code>column</code></em> is selected
@@ -864,12 +864,12 @@ at the specified <em class="parameter"><code>row</code></em> and <em class="para
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -883,8 +883,8 @@ if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-add-column-selection"></a><h3>atk_table_add_column_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_table_add_column_selection      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_table_add_column_selection      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Adds the specified <em class="parameter"><code>column</code></em> to the selection.
 </p>
@@ -897,7 +897,7 @@ Adds the specified <em class="parameter"><code>column</code></em> to the selecti
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -911,8 +911,8 @@ the selection, or 0 if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-add-row-selection"></a><h3>atk_table_add_row_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_table_add_row_selection         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_table_add_row_selection         (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);</pre>
 <p>
 Adds the specified <em class="parameter"><code>row</code></em> to the selection.
 </p>
@@ -925,7 +925,7 @@ Adds the specified <em class="parameter"><code>row</code></em> to the selection.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -939,8 +939,8 @@ or 0 if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-remove-column-selection"></a><h3>atk_table_remove_column_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_table_remove_column_selection   (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_table_remove_column_selection   (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> column</code></em>);</pre>
 <p>
 Adds the specified <em class="parameter"><code>column</code></em> to the selection.
 </p>
@@ -953,7 +953,7 @@ Adds the specified <em class="parameter"><code>column</code></em> to the selecti
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>column</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a column in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a column in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -967,8 +967,8 @@ the selection, or 0 if value does not implement this interface.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-table-remove-row-selection"></a><h3>atk_table_remove_row_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            atk_table_remove_row_selection      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            atk_table_remove_row_selection      (<em class="parameter"><code><a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *table</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> row</code></em>);</pre>
 <p>
 Removes the specified <em class="parameter"><code>row</code></em> from the selection.
 </p>
@@ -981,7 +981,7 @@ Removes the specified <em class="parameter"><code>row</code></em> from the selec
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>row</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> representing a row in <em class="parameter"><code>table</code></em>
+<td>a <span class="type">gint</span> representing a row in <em class="parameter"><code>table</code></em>
 </td>
 </tr>
 <tr>
@@ -998,9 +998,9 @@ the selection, or 0 if value does not implement this interface.</td>
 <div class="refsect2">
 <a name="AtkTable-column-deleted"></a><h3>The <code class="literal">"column-deleted"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *atktable,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg2,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gint</span>      arg1,
+                                                        <span class="type">gint</span>      arg2,
+                                                        <span class="type">gpointer</span>  user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The "column-deleted" signal is emitted by an object which implements the
 AtkTable interface when a column is deleted.
@@ -1031,9 +1031,9 @@ AtkTable interface when a column is deleted.
 <div class="refsect2">
 <a name="AtkTable-column-inserted"></a><h3>The <code class="literal">"column-inserted"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *atktable,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg2,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gint</span>      arg1,
+                                                        <span class="type">gint</span>      arg2,
+                                                        <span class="type">gpointer</span>  user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The "column-inserted" signal is emitted by an object which implements the
 AtkTable interface when a column is inserted.
@@ -1064,7 +1064,7 @@ AtkTable interface when a column is inserted.
 <div class="refsect2">
 <a name="AtkTable-column-reordered"></a><h3>The <code class="literal">"column-reordered"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *atktable,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>  user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The "column-reordered" signal is emitted by an object which implements the
 AtkTable interface when the columns are reordered.
@@ -1087,7 +1087,7 @@ AtkTable interface when the columns are reordered.
 <div class="refsect2">
 <a name="AtkTable-model-changed"></a><h3>The <code class="literal">"model-changed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *atktable,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>  user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The "model-changed" signal is emitted by an object which implements the
 AtkTable interface when the model displayed by the table changes.
@@ -1110,9 +1110,9 @@ AtkTable interface when the model displayed by the table changes.
 <div class="refsect2">
 <a name="AtkTable-row-deleted"></a><h3>The <code class="literal">"row-deleted"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *atktable,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg2,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gint</span>      arg1,
+                                                        <span class="type">gint</span>      arg2,
+                                                        <span class="type">gpointer</span>  user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The "row-deleted" signal is emitted by an object which implements the
 AtkTable interface when a row is deleted.
@@ -1143,9 +1143,9 @@ AtkTable interface when a row is deleted.
 <div class="refsect2">
 <a name="AtkTable-row-inserted"></a><h3>The <code class="literal">"row-inserted"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *atktable,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>      arg2,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gint</span>      arg1,
+                                                        <span class="type">gint</span>      arg2,
+                                                        <span class="type">gpointer</span>  user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The "row-inserted" signal is emitted by an object which implements the
 AtkTable interface when a row is inserted.
@@ -1176,7 +1176,7 @@ AtkTable interface when a row is inserted.
 <div class="refsect2">
 <a name="AtkTable-row-reordered"></a><h3>The <code class="literal">"row-reordered"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkTable.html" title="AtkTable"><span class="type">AtkTable</span></a> *atktable,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>  user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The "row-reordered" signal is emitted by an object which implements the
 AtkTable interface when the rows are reordered.
@@ -1205,6 +1205,6 @@ AtkTable interface when the rows are reordered.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

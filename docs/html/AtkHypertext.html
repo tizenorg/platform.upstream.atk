@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="atk-AtkHyperlinkImpl.html" title="AtkHyperlinkImpl">
 <link rel="next" href="AtkImage.html" title="AtkImage">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -45,10 +45,10 @@
 <a name="AtkHypertext.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="AtkHypertext.html#AtkHypertext-struct" title="AtkHypertext">AtkHypertext</a>;
 <a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="returnvalue">AtkHyperlink</span></a> *      <a class="link" href="AtkHypertext.html#atk-hypertext-get-link" title="atk_hypertext_get_link ()">atk_hypertext_get_link</a>              (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> link_index</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkHypertext.html#atk-hypertext-get-n-links" title="atk_hypertext_get_n_links ()">atk_hypertext_get_n_links</a>           (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="AtkHypertext.html#atk-hypertext-get-link-index" title="atk_hypertext_get_link_index ()">atk_hypertext_get_link_index</a>        (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> char_index</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> link_index</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkHypertext.html#atk-hypertext-get-n-links" title="atk_hypertext_get_n_links ()">atk_hypertext_get_n_links</a>           (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="AtkHypertext.html#atk-hypertext-get-link-index" title="atk_hypertext_get_link_index ()">atk_hypertext_get_link_index</a>        (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> char_index</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -67,7 +67,7 @@ AtkHypertext is implemented by
 <div class="refsect1">
 <a name="AtkHypertext.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="AtkHypertext.html#AtkHypertext-link-selected" title='The "link-selected" signal'>link-selected</a>"                                  : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="AtkHypertext.html#AtkHypertext-link-selected" title='The "link-selected" signal'>link-selected</a>"                                  : <code class="literal">Run Last</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -93,7 +93,7 @@ The AtkHypertext structure does not contain any fields.
 <div class="refsect2">
 <a name="atk-hypertext-get-link"></a><h3>atk_hypertext_get_link ()</h3>
 <pre class="programlisting"><a class="link" href="AtkHyperlink.html" title="AtkHyperlink"><span class="returnvalue">AtkHyperlink</span></a> *      atk_hypertext_get_link              (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> link_index</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> link_index</code></em>);</pre>
 <p>
 Gets the link in this hypertext document at index 
 <em class="parameter"><code>link_index</code></em>
@@ -122,7 +122,7 @@ index <em class="parameter"><code>link_index</code></em>. <span class="annotatio
 <hr>
 <div class="refsect2">
 <a name="atk-hypertext-get-n-links"></a><h3>atk_hypertext_get_n_links ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_hypertext_get_n_links           (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_hypertext_get_n_links           (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>);</pre>
 <p>
 Gets the number of links within this hypertext document.
 </p>
@@ -144,8 +144,8 @@ Gets the number of links within this hypertext document.
 <hr>
 <div class="refsect2">
 <a name="atk-hypertext-get-link-index"></a><h3>atk_hypertext_get_link_index ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                atk_hypertext_get_link_index        (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> char_index</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gint</span>                atk_hypertext_get_link_index        (<em class="parameter"><code><a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *hypertext</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> char_index</code></em>);</pre>
 <p>
 Gets the index into the array of hyperlinks that is associated with
 the character specified by <em class="parameter"><code>char_index</code></em>.
@@ -176,8 +176,8 @@ or -1 if there is no hyperlink associated with this character.</td>
 <div class="refsect2">
 <a name="AtkHypertext-link-selected"></a><h3>The <code class="literal">"link-selected"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkHypertext.html" title="AtkHypertext"><span class="type">AtkHypertext</span></a> *atkhypertext,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          arg1,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)         : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gint</span>          arg1,
+                                                        <span class="type">gpointer</span>      user_data)         : <code class="literal">Run Last</code></pre>
 <p>
 The "link-selected" signal is emitted by an AtkHyperText object when one of
 the hyperlinks associated with the object is selected.
@@ -210,6 +210,6 @@ AtkHyperlink
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

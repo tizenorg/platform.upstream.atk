@@ -480,6 +480,7 @@
     <keyword type="constant" name="ATK_ROLE_IMAGE_MAP" link="AtkObject.html#ATK-ROLE-IMAGE-MAP:CAPS"/>
     <keyword type="constant" name="ATK_ROLE_NOTIFICATION" link="AtkObject.html#ATK-ROLE-NOTIFICATION:CAPS"/>
     <keyword type="constant" name="ATK_ROLE_INFO_BAR" link="AtkObject.html#ATK-ROLE-INFO-BAR:CAPS"/>
+    <keyword type="constant" name="ATK_ROLE_LEVEL_BAR" link="AtkObject.html#ATK-ROLE-LEVEL-BAR:CAPS"/>
     <keyword type="constant" name="ATK_ROLE_LAST_DEFINED" link="AtkObject.html#ATK-ROLE-LAST-DEFINED:CAPS"/>
     <keyword type="constant" name="ATK_LAYER_INVALID" link="AtkObject.html#ATK-LAYER-INVALID:CAPS"/>
     <keyword type="constant" name="ATK_LAYER_BACKGROUND" link="AtkObject.html#ATK-LAYER-BACKGROUND:CAPS"/>

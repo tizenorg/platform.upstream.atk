@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkObject.html" title="AtkObject">
 <link rel="next" href="atk-AtkPlug.html" title="AtkPlug">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -43,8 +43,8 @@ objects of a specific GType.</p>
 <pre class="synopsis">struct              <a class="link" href="AtkObjectFactory.html#AtkObjectFactory-struct" title="struct AtkObjectFactory">AtkObjectFactory</a>;
 <a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkObjectFactory.html#atk-object-factory-create-accessible" title="atk_object_factory_create_accessible ()">atk_object_factory_create_accessible</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> *factory</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *obj</code></em>);
-<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="AtkObjectFactory.html#atk-object-factory-get-accessible-type" title="atk_object_factory_get_accessible_type ()">atk_object_factory_get_accessible_type</a>
+                                                         <em class="parameter"><code><span class="type">GObject</span> *obj</code></em>);
+<span class="returnvalue">GType</span>               <a class="link" href="AtkObjectFactory.html#atk-object-factory-get-accessible-type" title="atk_object_factory_get_accessible_type ()">atk_object_factory_get_accessible_type</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> *factory</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObjectFactory.html#atk-object-factory-invalidate" title="atk_object_factory_invalidate ()">atk_object_factory_invalidate</a>       (<em class="parameter"><code><a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> *factory</code></em>);
 </pre>
@@ -52,7 +52,7 @@ objects of a specific GType.</p>
 <div class="refsect1">
 <a name="AtkObjectFactory.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  GObject
    +----AtkObjectFactory
          +----<a class="link" href="AtkNoOpObjectFactory.html" title="AtkNoOpObjectFactory">AtkNoOpObjectFactory</a>
 </pre>
@@ -81,7 +81,7 @@ The AtkObjectFactory structure should not be accessed directly.
 <a name="atk-object-factory-create-accessible"></a><h3>atk_object_factory_create_accessible ()</h3>
 <pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_object_factory_create_accessible
                                                         (<em class="parameter"><code><a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> *factory</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *obj</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">GObject</span> *obj</code></em>);</pre>
 <p>
 Provides an <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> that implements an accessibility interface 
 on behalf of <em class="parameter"><code>obj</code></em>
@@ -96,7 +96,7 @@ object type</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>
+<td>a <span class="type">GObject</span>
 </td>
 </tr>
 <tr>
@@ -111,7 +111,7 @@ interface on behalf of <em class="parameter"><code>obj</code></em>. <span class=
 <hr>
 <div class="refsect2">
 <a name="atk-object-factory-get-accessible-type"></a><h3>atk_object_factory_get_accessible_type ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               atk_object_factory_get_accessible_type
+<pre class="programlisting"><span class="returnvalue">GType</span>               atk_object_factory_get_accessible_type
                                                         (<em class="parameter"><code><a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory"><span class="type">AtkObjectFactory</span></a> *factory</code></em>);</pre>
 <p>
 Gets the GType of the accessible which is created by the factory.
@@ -161,6 +161,6 @@ AtkRegistry
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

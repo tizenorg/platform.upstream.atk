@@ -58,7 +58,7 @@
  *
  * Since: 2.7.4
  */
-#define ATK_MICRO_VERSION (4)
+#define ATK_MICRO_VERSION (5)
 
 /**
  * ATK_BINARY_AGE:
@@ -69,7 +69,7 @@
  *
  * Since: 2.7.4
  */
-#define ATK_BINARY_AGE    (20714)
+#define ATK_BINARY_AGE    (20715)
 
 /**
  * ATK_INTERFACE_AGE:

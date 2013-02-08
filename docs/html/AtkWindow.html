@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkValue.html" title="AtkValue">
 <link rel="next" href="atk.html" title="Utilities">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -70,15 +70,15 @@ AtkWindow is implemented by
 <div class="refsect1">
 <a name="AtkWindow.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="AtkWindow.html#AtkWindow-activate" title='The "activate" signal'>activate</a>"                                       : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkWindow.html#AtkWindow-create" title='The "create" signal'>create</a>"                                         : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkWindow.html#AtkWindow-deactivate" title='The "deactivate" signal'>deactivate</a>"                                     : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkWindow.html#AtkWindow-destroy" title='The "destroy" signal'>destroy</a>"                                        : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkWindow.html#AtkWindow-maximize" title='The "maximize" signal'>maximize</a>"                                       : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkWindow.html#AtkWindow-minimize" title='The "minimize" signal'>minimize</a>"                                       : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkWindow.html#AtkWindow-move" title='The "move" signal'>move</a>"                                           : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkWindow.html#AtkWindow-resize" title='The "resize" signal'>resize</a>"                                         : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="AtkWindow.html#AtkWindow-restore" title='The "restore" signal'>restore</a>"                                        : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="AtkWindow.html#AtkWindow-activate" title='The "activate" signal'>activate</a>"                                       : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkWindow.html#AtkWindow-create" title='The "create" signal'>create</a>"                                         : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkWindow.html#AtkWindow-deactivate" title='The "deactivate" signal'>deactivate</a>"                                     : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkWindow.html#AtkWindow-destroy" title='The "destroy" signal'>destroy</a>"                                        : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkWindow.html#AtkWindow-maximize" title='The "maximize" signal'>maximize</a>"                                       : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkWindow.html#AtkWindow-minimize" title='The "minimize" signal'>minimize</a>"                                       : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkWindow.html#AtkWindow-move" title='The "move" signal'>move</a>"                                           : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkWindow.html#AtkWindow-resize" title='The "resize" signal'>resize</a>"                                         : <code class="literal">Run Last</code>
+  "<a class="link" href="AtkWindow.html#AtkWindow-restore" title='The "restore" signal'>restore</a>"                                        : <code class="literal">Run Last</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -103,7 +103,7 @@ dialog.
 <div class="refsect2">
 <a name="AtkWindow-activate"></a><h3>The <code class="literal">"activate"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-activate" title='The "activate" signal'><span class="type">"activate"</span></a> is emitted when a window
 becomes the active window of the application or session.
@@ -127,7 +127,7 @@ becomes the active window of the application or session.
 <div class="refsect2">
 <a name="AtkWindow-create"></a><h3>The <code class="literal">"create"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-create" title='The "create" signal'><span class="type">"create"</span></a> is emitted when a new window
 is created.
@@ -151,7 +151,7 @@ is created.
 <div class="refsect2">
 <a name="AtkWindow-deactivate"></a><h3>The <code class="literal">"deactivate"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-deactivate" title='The "deactivate" signal'><span class="type">"deactivate"</span></a> is emitted when a window is
 no longer the active window of the application or session.
@@ -175,7 +175,7 @@ no longer the active window of the application or session.
 <div class="refsect2">
 <a name="AtkWindow-destroy"></a><h3>The <code class="literal">"destroy"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-destroy" title='The "destroy" signal'><span class="type">"destroy"</span></a> is emitted when a window is
 destroyed.
@@ -199,7 +199,7 @@ destroyed.
 <div class="refsect2">
 <a name="AtkWindow-maximize"></a><h3>The <code class="literal">"maximize"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-maximize" title='The "maximize" signal'><span class="type">"maximize"</span></a> is emitted when a window
 is maximized.
@@ -223,7 +223,7 @@ is maximized.
 <div class="refsect2">
 <a name="AtkWindow-minimize"></a><h3>The <code class="literal">"minimize"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-minimize" title='The "minimize" signal'><span class="type">"minimize"</span></a> is emitted when a window
 is minimized.
@@ -247,7 +247,7 @@ is minimized.
 <div class="refsect2">
 <a name="AtkWindow-move"></a><h3>The <code class="literal">"move"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-move" title='The "move" signal'><span class="type">"move"</span></a> is emitted when a window
 is moved.
@@ -271,7 +271,7 @@ is moved.
 <div class="refsect2">
 <a name="AtkWindow-resize"></a><h3>The <code class="literal">"resize"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-resize" title='The "resize" signal'><span class="type">"resize"</span></a> is emitted when a window
 is resized.
@@ -295,7 +295,7 @@ is resized.
 <div class="refsect2">
 <a name="AtkWindow-restore"></a><h3>The <code class="literal">"restore"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AtkWindow.html" title="AtkWindow"><span class="type">AtkWindow</span></a> *object,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>   user_data)      : <code class="literal">Run Last</code></pre>
 <p>
 The signal <a class="link" href="AtkWindow.html#AtkWindow-restore" title='The "restore" signal'><span class="type">"restore"</span></a> is emitted when a window
 is restored.
@@ -323,6 +323,6 @@ is restored.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>
