@@ -1,7 +1,7 @@
 %bcond_with introspection
 
 Name:           atk
-Version:        2.7.4
+Version:        2.7.5
 Release:        0
 License:        LGPL-2.1+
 Summary:        An Accessibility ToolKit
@@ -11,7 +11,7 @@ Source:         http://download.gnome.org/sources/atk/2.7/%{name}-%{version}.tar
 Source98:       baselibs.conf
 BuildRequires:  fdupes
 BuildRequires:  gcc-c++
-BuildRequires:  glib2-devel >= 2.31.2
+BuildRequires:  glib2-devel >= 2.35.2
 %if %{with introspection}
 BuildRequires:  gobject-introspection-devel
 %endif
@@ -46,7 +46,7 @@ This package provides the GObject Introspection bindings for ATK.
 
 %package devel
 Summary:        Include Files and Libraries mandatory for Development
-Group:          Development/Libraries/GNOME
+Group:          Development/Gnome
 Requires:       libatk = %{version}
 %if %{with introspection}
 Requires:       typelib-Atk = %{version}
