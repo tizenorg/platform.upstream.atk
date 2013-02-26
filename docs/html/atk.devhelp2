@@ -81,7 +81,7 @@
     <keyword type="function" name="atk_document_get_attribute_value ()" link="AtkDocument.html#atk-document-get-attribute-value" since="1.12"/>
     <keyword type="function" name="atk_document_set_attribute_value ()" link="AtkDocument.html#atk-document-set-attribute-value" since="1.12"/>
     <keyword type="function" name="atk_document_get_attributes ()" link="AtkDocument.html#atk-document-get-attributes" since="1.12"/>
-    <keyword type="function" name="atk_document_get_locale ()" link="AtkDocument.html#atk-document-get-locale"/>
+    <keyword type="function" name="atk_document_get_locale ()" link="AtkDocument.html#atk-document-get-locale" deprecated=""/>
     <keyword type="signal" name="The &quot;load-complete&quot; signal" link="AtkDocument.html#AtkDocument-load-complete"/>
     <keyword type="signal" name="The &quot;load-stopped&quot; signal" link="AtkDocument.html#AtkDocument-load-stopped"/>
     <keyword type="signal" name="The &quot;reload&quot; signal" link="AtkDocument.html#AtkDocument-reload"/>

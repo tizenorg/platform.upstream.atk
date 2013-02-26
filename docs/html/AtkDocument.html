@@ -233,6 +233,11 @@ Virtual: get_document_attributes. <span class="annotation">[<a href="http://fold
 <div class="refsect2">
 <a name="atk-document-get-locale"></a><h3>atk_document_get_locale ()</h3>
 <pre class="programlisting">const <span class="returnvalue">gchar</span> *       atk_document_get_locale             (<em class="parameter"><code><a class="link" href="AtkDocument.html" title="AtkDocument"><span class="type">AtkDocument</span></a> *document</code></em>);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">atk_document_get_locale</code> is deprecated and should not be used in newly-written code. This method is deprecated since ATK version
+2.7.90. Please use atk_object_get_object_locale instead.</p>
+</div>
 <p>
 Gets a UTF-8 string indicating the POSIX-style LC_MESSAGES locale
          of the content of this document instance.  Individual
