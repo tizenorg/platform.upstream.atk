@@ -1,7 +1,7 @@
 %bcond_with introspection
 
 Name:           atk
-Version:        2.7.5
+Version:        2.7.91
 Release:        0
 License:        LGPL-2.1+
 Summary:        An Accessibility ToolKit
