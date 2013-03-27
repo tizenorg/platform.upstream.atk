@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="big5"?>
+<?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="install"
-	ProjectGUID="{00702787-1566-484D-991F-3E7E459BB909}"
-	RootNamespace="install"
-	TargetFrameworkVersion="196613"
+	Name="gengir"
+	ProjectGUID="{2093D218-190E-4194-9421-3BA7CBF33B15}"
+	RootNamespace="gengir"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -20,48 +21,34 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="$(GLibEtcInstallRoot)"
-			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="10"
 			InheritedPropertySheets=".\atk.vsprops"
+			OutputDirectory="$(GlibEtcInstallRoot)"
+			ConfigurationType="10"
 			CharacterSet="2"
+			DeleteExtensionsOnClean=""
 			>
 			<Tool
-				Name="VCPostBuildEventTool"
-				CommandLine="$(AtkDoInstall)"
+				Name="VCPreBuildEventTool"
+				CommandLine="$(DoGenGir)"
 			/>
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory="$(GLibEtcInstallRoot)"
 			InheritedPropertySheets=".\atk.vsprops"
+			OutputDirectory="$(GlibEtcInstallRoot)"
 			ConfigurationType="10"
 			CharacterSet="2"
 			DeleteExtensionsOnClean=""
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine="$(AtkDoInstall)"
+				CommandLine="$(DoGenGir)"
 			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(GLibEtcInstallRoot)"
-			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="10"
 			InheritedPropertySheets=".\atk.vsprops"
-			CharacterSet="2"
-			WholeProgramOptimization="1"
-			>
-			<Tool
-				Name="VCPostBuildEventTool"
-				CommandLine="$(AtkDoInstall)"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Release|x64"
-			OutputDirectory="$(GLibEtcInstallRoot)"
-			InheritedPropertySheets=".\atk.vsprops"
+			OutputDirectory="$(GlibEtcInstallRoot)"
 			ConfigurationType="10"
 			CharacterSet="2"
 			WholeProgramOptimization="1"
@@ -69,14 +56,22 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
-				CommandLine="$(AtkDoInstall)"
+				CommandLine="$(DoGenGir)"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			InheritedPropertySheets=".\atk.vsprops"
+			OutputDirectory="$(GlibEtcInstallRoot)"
+			ConfigurationType="10"
+			CharacterSet="2"
+			WholeProgramOptimization="1"
+			DeleteExtensionsOnClean=""
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+				CommandLine="$(DoGenGir)"
 			/>
 		</Configuration>
 	</Configurations>
-	<References>
-	</References>
-	<Files>
-	</Files>
-	<Globals>
-	</Globals>
 </VisualStudioProject>
