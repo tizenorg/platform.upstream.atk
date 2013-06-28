@@ -9,6 +9,7 @@ Url:            http://www.gtk.org/
 Group:          System/Libraries
 Source:         http://download.gnome.org/sources/atk/2.8/%{name}-%{version}.tar.xz
 Source98:       baselibs.conf
+Source1001: 	atk.manifest
 BuildRequires:  fdupes
 BuildRequires:  gcc-c++
 BuildRequires:  glib2-devel >= 2.35.2
@@ -59,6 +60,7 @@ to develop applications that require these.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 %configure \
@@ -74,6 +76,7 @@ make %{?_smp_mflags}
 %postun -n libatk -p /sbin/ldconfig
 
 %files -n libatk
+%manifest %{name}.manifest
 %defattr(-, root, root)
 %license COPYING
 %{_libdir}/lib*.so.*
@@ -81,11 +84,13 @@ make %{?_smp_mflags}
 
 %if %{with introspection}
 %files -n typelib-Atk
+%manifest %{name}.manifest
 %defattr(-, root, root)
 %{_libdir}/girepository-1.0/Atk-1.0.typelib
 %endif
 
 %files devel
+%manifest %{name}.manifest
 %defattr(-, root, root)
 %{_includedir}/atk-1.0
 %{_libdir}/lib*.so
