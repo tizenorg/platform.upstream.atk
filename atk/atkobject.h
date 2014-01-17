@@ -526,6 +526,13 @@ void                      (* initialize)                         (AtkObject     
   void                    (*active_descendant_changed) (AtkObject                  *accessible,
                                                         gpointer                   *child);
 
+  /*
+   * The signal handler which is executed  when there is a action_done
+   * signal for an object.
+   */
+  void                    (*action_done) (AtkObject                  *accessible,
+                                          guint                      action_index);
+
   /*    	
    * Gets a list of properties applied to this object as a whole, as an #AtkAttributeSet consisting of name-value pairs. 
    * Since ATK 1.12
