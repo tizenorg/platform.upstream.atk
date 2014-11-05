@@ -1,35 +1,43 @@
 %bcond_with introspection
+%define baseline 2.12
+%define api_level 1.0
+%define api_level_alpha 10
+
 
 Name:           atk
-Version:        2.8.0
+Version:        2.12.0
 Release:        0
 License:        LGPL-2.1+
 Summary:        An Accessibility ToolKit
 Url:            http://www.gtk.org/
+#X-Vc-Url:      git://git.gnome.org/atk
 Group:          System/Libraries
-Source:         http://download.gnome.org/sources/atk/2.8/%{name}-%{version}.tar.xz
+Source:         http://download.gnome.org/sources/%{name}/%{baseline}/%{name}-%{version}.tar.xz
 Source98:       baselibs.conf
-Source1001: 	atk.manifest
+Source1001:     %{name}.manifest
+BuildRequires:  gettext-tools
+BuildRequires:  gnome-common
+BuildRequires:  gtk-doc
 BuildRequires:  fdupes
 BuildRequires:  gcc-c++
 BuildRequires:  glib2-devel >= 2.35.2
 %if %{with introspection}
 BuildRequires:  gobject-introspection-devel
 %endif
-Requires:       libatk
+Requires:       lib%{name}
 
 %description
 The ATK library provides a set of accessibility interfaces. By
 supporting the ATK interfaces, an application or toolkit can be used
 with screen readers, magnifiers, and alternate input devices.
 
-%package -n libatk
+%package -n lib%{name}
 Summary:        An Accessibility ToolKit
 Group:          System/Libraries
 Provides:       %{name} = %{version}
 Obsoletes:      %{name} < %{version}
 
-%description -n libatk
+%description -n lib%{name}
 The ATK library provides a set of accessibility interfaces. By
 supporting the ATK interfaces, an application or toolkit can be used
 with screen readers, magnifiers, and alternate input devices.
@@ -47,8 +55,8 @@ This package provides the GObject Introspection bindings for ATK.
 
 %package devel
 Summary:        Include Files and Libraries mandatory for Development
-Group:          Development/Gnome
-Requires:       libatk = %{version}
+Group:          System/Libraries
+Requires:       lib%{name} = %{version}
 %if %{with introspection}
 Requires:       typelib-Atk = %{version}
 %endif
@@ -63,19 +71,26 @@ to develop applications that require these.
 cp %{SOURCE1001} .
 
 %build
+NOCONFIGURE=1 ./autogen.sh
+
 %configure \
   --disable-static
-make %{?_smp_mflags}
+
+%__make %{?_smp_mflags}
+
 
 %install
 %make_install
-%fdupes %{buildroot}
+install -d %{buildroot}/usr/share/help
 
-%post -n libatk -p /sbin/ldconfig
+%find_lang %{name}%{api_level_alpha}
+fdupes %{buildroot}
 
-%postun -n libatk -p /sbin/ldconfig
+%post -n lib%{name} -p /sbin/ldconfig
 
-%files -n libatk
+%postun -n lib%{name} -p /sbin/ldconfig
+
+%files -n lib%{name}
 %manifest %{name}.manifest
 %defattr(-, root, root)
 %license COPYING
@@ -86,17 +101,18 @@ make %{?_smp_mflags}
 %files -n typelib-Atk
 %manifest %{name}.manifest
 %defattr(-, root, root)
-%{_libdir}/girepository-1.0/Atk-1.0.typelib
+%{_libdir}/girepository-%{api_level}/Atk-%{api_level}.typelib
 %endif
 
 %files devel
 %manifest %{name}.manifest
 %defattr(-, root, root)
-%{_includedir}/atk-1.0
+%{_includedir}/%{name}-%{api_level}
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*.pc
 %if %{with introspection}
-%{_datadir}/gir-1.0/*.gir
+%{_datadir}/gir-%{api_level}/*.gir
 %endif
 
-%docs_package
+
+%lang_package -f %{name}%{api_level_alpha}
