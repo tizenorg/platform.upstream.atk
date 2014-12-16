@@ -56,9 +56,9 @@ This package provides the GObject Introspection bindings for ATK.
 %package devel
 Summary:        Include Files and Libraries mandatory for Development
 Group:          System/Libraries
-Requires:       lib%{name} = %{version}
+Requires:       lib%{name} = %{version}-%{release}
 %if %{with introspection}
-Requires:       typelib-Atk = %{version}
+Requires:       typelib-Atk = %{version}-%{release}
 %endif
 
 %description devel
