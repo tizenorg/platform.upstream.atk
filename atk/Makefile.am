@@ -158,35 +158,6 @@ s-enum-types-c: @REBUILD@ $(atk_headers) Makefile
 	&& rm -f tmp-atk-enum-types.c \
 	&& echo timestamp > $(@F)
 
-
-if HAVE_INTROSPECTION
-introspection_sources = \
-    $(atk_headers)	\
-    $(atk_sources)
-introspection_generated_sources = \
-    $(top_builddir)/atk/atkversion.h 	\
-    atk-enum-types.c	\
-    atk-enum-types.h
-
-Atk-1.0.gir: libatk-1.0.la Makefile
-Atk_1_0_gir_INCLUDES = GObject-2.0
-Atk_1_0_gir_CFLAGS = $(AM_CPPFLAGS)
-Atk_1_0_gir_LIBS = libatk-1.0.la
-Atk_1_0_gir_SCANNERFLAGS = --pkg-export atk --warn-all --c-include "atk/atk.h"
-Atk_1_0_gir_FILES = \
-    $(addprefix $(srcdir)/, $(introspection_sources))	\
-    $(introspection_generated_sources)
-INTROSPECTION_GIRS += Atk-1.0.gir
-
-girdir = $(datadir)/gir-1.0
-gir_DATA = $(INTROSPECTION_GIRS)
-
-typelibsdir = $(libdir)/girepository-1.0
-typelibs_DATA = $(INTROSPECTION_GIRS:.gir=.typelib)
-
-CLEANFILES += $(gir_DATA) $(typelibs_DATA)
-endif
-
 # ---------- Win32 stuff ----------
 
 if OS_WIN32
