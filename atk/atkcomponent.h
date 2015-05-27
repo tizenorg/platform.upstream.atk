@@ -131,6 +131,7 @@ struct _AtkComponentIface
                                                          gint           *width,
                                                          gint           *height);
   gboolean                 (* grab_focus)               (AtkComponent   *component);
+  gboolean                 (* grab_highlight)           (AtkComponent   *component);
   void                     (* remove_focus_handler)      (AtkComponent  *component,
                                                           guint         handler_id);
   gboolean                 (* set_extents)      (AtkComponent   *component,
@@ -190,6 +191,7 @@ void                  atk_component_get_size               (AtkComponent    *com
 AtkLayer              atk_component_get_layer              (AtkComponent    *component);
 gint                  atk_component_get_mdi_zorder         (AtkComponent    *component);
 gboolean              atk_component_grab_focus             (AtkComponent    *component);
+gboolean              atk_component_grab_highlight         (AtkComponent    *component);
 G_DEPRECATED
 void                  atk_component_remove_focus_handler   (AtkComponent    *component,
                                                             guint           handler_id);
