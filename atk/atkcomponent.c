@@ -491,6 +491,28 @@ atk_component_grab_highlight (AtkComponent    *component)
 }
 
 /**
+ * atk_component_clear_highlight:
+ * @component: an #AtkComponent
+ *
+ * Clears highlight for this @component.
+ *
+ * Returns: %TRUE if successful, %FALSE otherwise.
+ **/
+gboolean
+atk_component_clear_highlight (AtkComponent    *component)
+{
+  AtkComponentIface *iface = NULL;
+  g_return_val_if_fail (ATK_IS_COMPONENT (component), FALSE);
+
+  iface = ATK_COMPONENT_GET_IFACE (component);
+
+  if (iface->clear_highlight)
+    return (iface->clear_highlight) (component);
+  else
+    return FALSE;
+}
+
+/**
  * atk_component_set_extents:
  * @component: an #AtkComponent
  * @x: x coordinate
