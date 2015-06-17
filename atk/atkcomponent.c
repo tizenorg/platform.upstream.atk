@@ -513,6 +513,28 @@ atk_component_clear_highlight (AtkComponent    *component)
 }
 
 /**
+ * atk_component_get_highlight_index:
+ * @component: an #AtkComponent
+ *
+ * Returns: highlight index of the @component (if >0),
+ * 0 if highlight index is not set or -1 if an error occured.
+ *
+ **/
+gint
+atk_component_get_highlight_index (AtkComponent    *component)
+{
+  AtkComponentIface *iface = NULL;
+  g_return_val_if_fail (ATK_IS_COMPONENT (component), -1);
+
+  iface = ATK_COMPONENT_GET_IFACE (component);
+
+  if (iface->get_highlight_index)
+    return (iface->get_highlight_index) (component);
+  else
+    return -1;
+}
+
+/**
  * atk_component_set_extents:
  * @component: an #AtkComponent
  * @x: x coordinate

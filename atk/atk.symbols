@@ -25,6 +25,7 @@
 	atk_component_grab_focus
 	atk_component_grab_highlight
 	atk_component_clear_highlight
+	atk_component_get_highlight_index
 	atk_component_ref_accessible_at_point
 	atk_component_remove_focus_handler
 	atk_component_set_extents
