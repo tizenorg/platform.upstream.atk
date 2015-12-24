@@ -7,7 +7,7 @@
 Name:           atk
 Version:        2.12.0
 Release:        0
-License:        LGPL-2.1+
+License:        LGPL-2.0+
 Summary:        An Accessibility ToolKit
 Url:            http://www.gtk.org/
 #X-Vc-Url:      git://git.gnome.org/atk
