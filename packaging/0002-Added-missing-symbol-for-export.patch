@@ -1,0 +1,22 @@
+From: Maciej Florek <m.florek@samsung.com>
+Date: Wed, 3 Jun 2015 17:33:36 +0200
+Subject: Added missing symbol for export
+
+Change-Id: I09b8e78811717d15fdc1b79a3c1a7c6686d51cf9
+Signed-off-by: Maciej Florek <m.florek@samsung.com>
+---
+ atk/atk.symbols | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/atk/atk.symbols b/atk/atk.symbols
+index 75579eb..7ac27b5 100644
+--- a/atk/atk.symbols
++++ b/atk/atk.symbols
+@@ -23,6 +23,7 @@
+ 	atk_component_get_size
+ 	atk_component_get_type
+ 	atk_component_grab_focus
++	atk_component_grab_highlight
+ 	atk_component_ref_accessible_at_point
+ 	atk_component_remove_focus_handler
+ 	atk_component_set_extents

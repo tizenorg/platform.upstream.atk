@@ -1,0 +1,78 @@
+From: Maciej Florek <m.florek@samsung.com>
+Date: Wed, 17 Jun 2015 16:29:59 +0200
+Subject: get_highlight_index callback added to the AtkComponentInterface
+
+Change-Id: Ia428b9f52d9fe684660b2f817ab48317299ec007
+Signed-off-by: Maciej Florek <m.florek@samsung.com>
+---
+ atk/atk.symbols    |  1 +
+ atk/atkcomponent.c | 22 ++++++++++++++++++++++
+ atk/atkcomponent.h |  3 +++
+ 3 files changed, 26 insertions(+)
+
+diff --git a/atk/atk.symbols b/atk/atk.symbols
+index 09e9f40..2410d54 100644
+--- a/atk/atk.symbols
++++ b/atk/atk.symbols
+@@ -25,6 +25,7 @@
+ 	atk_component_grab_focus
+ 	atk_component_grab_highlight
+ 	atk_component_clear_highlight
++	atk_component_get_highlight_index
+ 	atk_component_ref_accessible_at_point
+ 	atk_component_remove_focus_handler
+ 	atk_component_set_extents
+diff --git a/atk/atkcomponent.c b/atk/atkcomponent.c
+index 822bd62..6955fc9 100755
+--- a/atk/atkcomponent.c
++++ b/atk/atkcomponent.c
+@@ -513,6 +513,28 @@ atk_component_clear_highlight (AtkComponent    *component)
+ }
+ 
+ /**
++ * atk_component_get_highlight_index:
++ * @component: an #AtkComponent
++ *
++ * Returns: highlight index of the @component (if >0),
++ * 0 if highlight index is not set or -1 if an error occured.
++ *
++ **/
++gint
++atk_component_get_highlight_index (AtkComponent    *component)
++{
++  AtkComponentIface *iface = NULL;
++  g_return_val_if_fail (ATK_IS_COMPONENT (component), -1);
++
++  iface = ATK_COMPONENT_GET_IFACE (component);
++
++  if (iface->get_highlight_index)
++    return (iface->get_highlight_index) (component);
++  else
++    return -1;
++}
++
++/**
+  * atk_component_set_extents:
+  * @component: an #AtkComponent
+  * @x: x coordinate
+diff --git a/atk/atkcomponent.h b/atk/atkcomponent.h
+index 33096c6..a19a23e 100755
+--- a/atk/atkcomponent.h
++++ b/atk/atkcomponent.h
+@@ -133,6 +133,8 @@ struct _AtkComponentIface
+   gboolean                 (* grab_focus)               (AtkComponent   *component);
+   gboolean                 (* grab_highlight)           (AtkComponent   *component);
+   gboolean                 (* clear_highlight)          (AtkComponent   *component);
++  gint                     (* get_highlight_index)      (AtkComponent   *component);
++
+   void                     (* remove_focus_handler)      (AtkComponent  *component,
+                                                           guint         handler_id);
+   gboolean                 (* set_extents)      (AtkComponent   *component,
+@@ -194,6 +196,7 @@ gint                  atk_component_get_mdi_zorder         (AtkComponent    *com
+ gboolean              atk_component_grab_focus             (AtkComponent    *component);
+ gboolean              atk_component_grab_highlight         (AtkComponent    *component);
+ gboolean              atk_component_clear_highlight        (AtkComponent    *component);
++gint                  atk_component_get_highlight_index    (AtkComponent    *component);
+ G_DEPRECATED
+ void                  atk_component_remove_focus_handler   (AtkComponent    *component,
+                                                             guint           handler_id);
