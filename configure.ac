@@ -195,7 +195,7 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, ["$GETTEXT_PACKAGE"],
   [Define the gettext package to be used])
 
 # Introspection support
-GOBJECT_INTROSPECTION_CHECK([0.6.7])
+#GOBJECT_INTROSPECTION_CHECK([0.6.7])
 
 # Documentation support
 GTK_DOC_CHECK([1.13])
@@ -247,7 +247,6 @@ AC_SUBST(ATK_HIDDEN_VISIBILITY_CFLAGS)
 
 AC_CONFIG_FILES([
 Makefile
-po/Makefile.in
 atk.pc
 atk-uninstalled.pc
 atk/Makefile
