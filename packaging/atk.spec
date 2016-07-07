@@ -14,7 +14,7 @@ Source1001:     %{name}.manifest
 BuildRequires:  fdupes
 BuildRequires:  gcc-c++
 BuildRequires:  glib2-devel >= 2.35.2
-BuildRequires:  gtk-doc 
+BuildRequires:  gtk-doc
 BuildRequires:  intltool
 BuildRequires:  which
 %if %{with introspection}
